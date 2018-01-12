@@ -1,7 +1,7 @@
 # from abc import ABCMeta
 import abc
 
-class UserOptimizer:
+class UserParameters:
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
@@ -31,5 +31,3 @@ class UserOptimizer:
     	"""
     	return
 
-# test = UserOptimizer()
-# test.initialFlags(['a','b','c'])

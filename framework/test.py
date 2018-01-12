@@ -1,9 +1,6 @@
-# import abc
-# from base import UserOptimizer
-# import userFunctions
-from userFunctions import UserOptimizer
+from userFunctions import UserParameters
 
-class Test(UserOptimizer):
+class Test(UserParameters):
     def initialFlags(self, initialList):
         print initialList    
 
