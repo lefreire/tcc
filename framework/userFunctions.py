@@ -21,6 +21,10 @@ class UserParameters:
     	"""Method to be implemented by the user
     	    Method to have the path to the compiling file
 
+        Returns
+        -------
+        path : string
+            Path indicating where can be find the file to compile the target code.
     	"""
     	return
 
@@ -28,6 +32,11 @@ class UserParameters:
     def evaluationFunction(self):
     	"""Method to be implemented by the user
     	    Method to do the evaluation of the code to be optimized
+
+        Returns
+        -------
+        value : float
+            This method returns the value to be evaluated and optimized.
     	"""
     	return
 
