@@ -6,8 +6,11 @@ class Test(UserParameters):
         print initialList  
 
     def pathToCompile(self): 
-        pathToMake = os.getcwd() + '/codeToTest'
+        pathToMake = os.getcwd() + "/codeToTest"
         return pathToMake
+
+    def argumentsToCompile(self):
+    	return "make"
 
     def evaluationFunction(self):
         my_command = "./nbody.gpp-3.gpp_run 50000000"
@@ -22,4 +25,5 @@ class Test(UserParameters):
 x = Test()
 x.initialFlags(['a', 'b', 'c'])
 x.initialFlags(3)
-print x.pathToCompile()
+# print x.pathToCompile()
+# print x.argumentsToCompile()

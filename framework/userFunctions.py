@@ -29,6 +29,10 @@ class UserParameters:
     	return
 
     @abc.abstractmethod
+    def argumentsToCompile(self):
+        return 
+
+    @abc.abstractmethod
     def evaluationFunction(self):
     	"""Method to be implemented by the user
     	    Method to do the evaluation of the code to be optimized
