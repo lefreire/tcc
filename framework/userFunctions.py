@@ -30,7 +30,27 @@ class UserParameters:
 
     @abc.abstractmethod
     def argumentsToCompile(self):
+        """Method to be implemented by the user
+            Method to have the way to run the Makefile or similar
+
+        Returns
+        -------
+        command : string
+            Command indicating how to run the file to compile the code.
+        """
         return 
+
+    @abc.abstractmethod
+    def argumentsToRunCode(self):
+        """Method to be implemented by the user
+            Method to have the way to run the executable file
+
+        Returns
+        -------
+        command : string
+            Command indicating how to run the executable file.
+        """
+        return
 
     @abc.abstractmethod
     def evaluationFunction(self):
@@ -40,7 +60,7 @@ class UserParameters:
         Returns
         -------
         value : float
-            This method returns the value to be evaluated and optimized.
+            This method returns the value to be optimized.
     	"""
     	return
 

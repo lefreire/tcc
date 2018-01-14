@@ -3,29 +3,30 @@ import os, subprocess
 
 class runOptimizer():
 
-	def __init__(self):
-		self.testVariable =  Test()
+    def __init__(self):
+        self.testVariable =  Test()
 
-	def runMake(self):
-		path = str(self.testVariable.pathToCompile())
-		# path = "/Users/letfreire/Documents/projetos/tcc/tcc/framework/codeToTest"
-		print path
-		os.chdir(path)
+    def runMakefile(self):
+        path = self.testVariable.pathToCompile()
+	os.chdir(path)
         print "======= Changing directory ======="
         print os.getcwd()
 
         my_env = os.environ.copy()
         my_env["PATH"] = "/usr/sbin:/sbin:" + my_env["PATH"]
-        print my_env
+        # print my_env
         print "======= Starting make ======="
-        my_command= "make" 
-        # my_command = self.testVariable.argumentsToCompile()
+        # my_command= "make" 
+        my_command = self.testVariable.argumentsToCompile()
 
-        # #call the command
-        # process = subprocess.Popen(my_command, env=my_env, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        # #get the code number 
-        # out = process.wait()
+        #call the command
+        process = subprocess.Popen(my_command, env=my_env, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        #get the code number 
+        out = process.wait()
+
+    
+        
 
 y = runOptimizer()
-y.runMake()
+y.runMakefile()
         
