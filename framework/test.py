@@ -12,7 +12,7 @@ class Test(UserParameters):
         print initialList  
 
     def pathToCompile(self):
-        """ Implementing the method initialFlags.
+        """ Implementing the method pathToCompile.
     	    This method returns the path where can be found the file 
     	    to compile the target code (Makefile or similar)
     	""" 
