@@ -5,23 +5,30 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
+#for scientific notation
+from decimal import Decimal
+
+from ../framework/test.py import *
+
 
 class my_problem:
     def __init__(self, dim):
         self.dim = dim
 
     def fitness(self, x):
-        return [-sum(x)]
+        #return [-sum(x)]
+        return [
 
 
     def get_bounds(self):
-        return ([1] * self.dim, [100000] * self.dim)
+        #return ([1] * self.dim, [100000] * self.dim)
+        return ([1] * self.dim, [6] * self.dim)
 
 
 def main(population):
     print "APENAS UM TESTE: ", population
     #defining some numbers
-    no_pop = 150
+    no_pop = 10
     no_generations = 50
     no_individuals = 51
     #defining my problem
@@ -36,12 +43,6 @@ def main(population):
         #generating the individuals
         list_int = range(100000)
         for i in range(0, no_pop):
-            #individual = []
-            #pos_list = randint(0, len(list_int)-1) #choose a random position in a list
-            #for i in range(0, no_individuals):
-               # individual =individual + [list_int[pos_list]]
-                #pos_list = randint(0, len(list_int)-1) #choose a random position in a list
-            #pop.push_back(x = individual)
             pop.push_back(x = population[i])
         print "POPULACAO: ", pop
 
@@ -53,7 +54,7 @@ def main(population):
         logs = algo.extract(pg.sga).get_log() 
         print logs
         #making the plot
-        plt.plot([l[0] for l in logs],[-l[2] for l in logs], linewidth=2.5,  label = -logs[-1][2])
+        plt.plot([l[0] for l in logs],[-l[2] for l in logs], linewidth=2.5,  label  = "Pygmo: "+ str('%.2E' % Decimal(-logs[-1][2])))
         plt.legend(bbox_to_anchor=(0.5, 0), loc=3,
                ncol=2, mode="expand", borderaxespad=0.)
         #naming the x and y label and putting the title
