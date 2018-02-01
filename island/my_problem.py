@@ -8,8 +8,11 @@ import matplotlib.pyplot as plt
 #for scientific notation
 from decimal import Decimal
 
-from ../framework/test.py import *
-
+#from ../framework/test.py import *
+import sys
+sys.path.insert(0, '../framework/')
+#print sys
+import test
 
 class my_problem:
     def __init__(self, dim):
@@ -17,7 +20,9 @@ class my_problem:
 
     def fitness(self, x):
         #return [-sum(x)]
-        return [
+        x = Test()
+        print x.evaluationFunction()
+        return [x.evaluationFunction()]
 
 
     def get_bounds(self):
@@ -49,7 +54,7 @@ def main(population):
         values = []
         algo = pg.algorithm(pg.sga(gen=no_generations, cr=0.3, m=0.1, selection = "tournament"))
         algo.set_verbosity(1)
-        #print algo
+        print algo
         pop = algo.evolve(pop)
         logs = algo.extract(pg.sga).get_log() 
         print logs

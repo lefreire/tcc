@@ -36,6 +36,11 @@ print "INDIVIDUOS: ", individuos_def
 
 
 #for pygmo evolution
-#from my_problem import *
-#main(individuos)
+#from ../island/my_problem import *
+import sys
+sys.path.insert(0, '../island/')
+print sys
+from my_problem import * 
+
+main(individuos_def)
 
