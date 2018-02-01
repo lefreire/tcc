@@ -33,13 +33,15 @@ class Test(UserParameters):
         command = "./nbody.gpp-3.gpp_run 50000000"
         return command
 
-    def evaluationFunction(self):
+    def evaluationFunction(self, x):
         """ Implementing the method evaluationFunction.
             This method returns the value to be optimized by the framework.
             In this method, the user needs to run the executable file and get the value to pass
             to the framework.
         """ 
-        path = os.getcwd() + "/codeToTest"
+        #path = os.getcwd() + "/codeToTest"
+        path = os.getcwd()
+        print path
         os.chdir(path)
         print "======= Changing directory ======="
         print os.getcwd()
@@ -54,12 +56,12 @@ class Test(UserParameters):
         out, err =  p.communicate()
         #time
         value = time.time() - t0
-        print value
-        return value, 
+        #print value
+        return value 
 
-x = Test()
-x.initialFlags(['a', 'b', 'c'])
-x.initialFlags(3)
-x.evaluationFunction()
+#x = Test()
+#x.initialFlags(['a', 'b', 'c'])
+#x.initialFlags(3)
+#x.evaluationFunction()
 # print x.pathToCompile()
 # print x.argumentsToCompile()
