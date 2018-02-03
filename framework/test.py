@@ -5,11 +5,12 @@ import time
 class Test(UserParameters):
     """ Class to test the abstract class UserParameters 
     """
-    def initialFlags(self, initialList):
+    def initialFlags(self):
         """ Implementing the method initialFlags.
             This method needs to return a list with the preferential compilation flags to be used in the evaluation
         """
-        print initialList  
+        initialList = ['-O', '-O1', '-O2', '-O3', '-O0', '-Os']
+        return initialList  
 
     def pathToCompile(self):
         """ Implementing the method pathToCompile.
@@ -38,9 +39,10 @@ class Test(UserParameters):
             This method returns the value to be optimized by the framework.
             In this method, the user needs to run the executable file and get the value to pass
             to the framework.
-        """ 
-        #path = os.getcwd() + "/codeToTest"
-        path = os.getcwd()
+        """
+        path_ant = os.getcwd() 
+        path = os.getcwd() + "/codeToTest"
+        #path = os.getcwd()
         print path
         os.chdir(path)
         print "======= Changing directory ======="
@@ -56,8 +58,19 @@ class Test(UserParameters):
         out, err =  p.communicate()
         #time
         value = time.time() - t0
+        os.chdir(path_ant)
+        print "======= Changing directory ======="
+        print os.getcwd()
         #print value
         return value 
+
+    def pathToClean(self):
+        path = os.getcwd() + "/codeToTest"
+        return path
+
+    def argumentsToClean(self):
+        command = "make clean"
+        return command
 
 #x = Test()
 #x.initialFlags(['a', 'b', 'c'])

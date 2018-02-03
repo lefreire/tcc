@@ -5,7 +5,7 @@ class UserParameters:
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
-    def initialFlags(self, initialList):
+    def initialFlags(self):
         """Method to be implemented by the user
             Set the initial list of flags to be used in the optimization
         
@@ -53,7 +53,7 @@ class UserParameters:
         return
 
     @abc.abstractmethod
-    def evaluationFunction(self):
+    def evaluationFunction(self, x):
     	"""Method to be implemented by the user
     	    Method to do the evaluation of the code to be optimized
 
@@ -64,3 +64,10 @@ class UserParameters:
     	"""
     	return
 
+    @abc.abstractmethod
+    def pathToClean(self):
+        return 
+
+    @abc.abstractmethod
+    def argumentsToClean(self):
+        return 
