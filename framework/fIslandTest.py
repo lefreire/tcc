@@ -32,6 +32,8 @@ for ind in xrange(0, args[1]):
             individual_first = individual_first + [options[individual]]
     individuos_def = individuos_def + [individual_first]
 
+
+
 print "INDIVIDUOS: ", individuos_def
 
 
@@ -42,5 +44,5 @@ sys.path.insert(0, '../island/')
 print sys
 from my_problem import * 
 
-main(individuos_def)
-
+#main(individuos_def)
+main(individuos, options)
