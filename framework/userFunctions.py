@@ -66,8 +66,24 @@ class UserParameters:
 
     @abc.abstractmethod
     def pathToClean(self):
+         """Method to be implemented by the user
+            Method to have the way to run the Makefile or similar to clean the executable files
+
+        Returns
+        -------
+        path : string
+            Command indicating how to clean the executable files.
+        """
         return 
 
     @abc.abstractmethod
     def argumentsToClean(self):
+        """Method to be implemented by the user
+           Method to have the way to run the clean the executable files
+
+        Returns
+        -------
+        command : string 
+            Command indicating how to clean the executable files.
+        """
         return 

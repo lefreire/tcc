@@ -65,10 +65,17 @@ class Test(UserParameters):
         return value 
 
     def pathToClean(self):
+        """ Implementing the method pathToClean.
+            This method returns the path where can be found the executable files 
+            to be cleaned
+        """
         path = os.getcwd() + "/codeToTest"
         return path
 
     def argumentsToClean(self):
+        """ Implementing the method argumentsToClean.
+            This method returns the command to clean the target code
+        """
         command = "make clean"
         return command
 
