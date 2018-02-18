@@ -74,7 +74,7 @@ class UserParameters:
         path : string
             Command indicating how to clean the executable files.
         """
-        return 
+    	return 
 
     @abc.abstractmethod
     def argumentsToClean(self):
