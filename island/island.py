@@ -115,6 +115,9 @@ class Island:
         plt.savefig('graphicChanges/myfig_elitism_'+str(no_generations)+'.png')
         #plt.show()
 
+def main(population, flag_option):
+    Island(6).islandMethod(population, flag_option)
+
 
 if __name__ == "__main__":
-    Island().islandMethod(population, flag_option)
+    main()
