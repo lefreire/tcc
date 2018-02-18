@@ -18,15 +18,15 @@ class UserParameters:
 
     @abc.abstractmethod
     def pathToCompile(self):
-    	"""Method to be implemented by the user
-    	    Method to have the path to the compiling file
+        """Method to be implemented by the user
+            Method to have the path to the compiling file
 
         Returns
         -------
         path : string
             Path indicating where can be find the file to compile the target code.
-    	"""
-    	return
+        """
+        return
 
     @abc.abstractmethod
     def argumentsToCompile(self):
@@ -54,19 +54,19 @@ class UserParameters:
 
     @abc.abstractmethod
     def evaluationFunction(self, x):
-    	"""Method to be implemented by the user
-    	    Method to do the evaluation of the code to be optimized
+        """Method to be implemented by the user
+            Method to do the evaluation of the code to be optimized
 
         Returns
         -------
         value : float
             This method returns the value to be optimized.
-    	"""
-    	return
+        """
+        return
 
     @abc.abstractmethod
     def pathToClean(self):
-         """Method to be implemented by the user
+        """Method to be implemented by the user
             Method to have the way to run the Makefile or similar to clean the executable files
 
         Returns
@@ -74,7 +74,7 @@ class UserParameters:
         path : string
             Command indicating how to clean the executable files.
         """
-    	return 
+        return 
 
     @abc.abstractmethod
     def argumentsToClean(self):
