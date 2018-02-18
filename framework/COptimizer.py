@@ -7,11 +7,17 @@ from my_problem import *
 from test import *
 
 class COpt():
-    
+    """ Class to run the optimizer 
+    """    
+
     def __init__(self):
+        """ Constructor
+        """
         pass
 
     def initialParameters(self):
+        """ Defining initial parameters to pass to the optimizer 
+        """
         args = 5*[0]
         args[0] = 50 #number of generations
         args[1] = 10 # size of population
@@ -21,10 +27,15 @@ class COpt():
         return args
 
     def getFlagOptions(self):
+        """ Getting the flag options defined by the user
+        """
         test = Test()
         return test.initialFlags()
 
     def constructFirstPopulation(self):
+        """ Constructing the first population 
+            This first population is composed by 0's and 1's, representing if the flag is present in the population or not
+        """
         options = self.getFlagOptions()
         no_options = len(options)
         parameters = self.initialParameters()
@@ -38,13 +49,12 @@ class COpt():
         return individuos
 
     def runOptimization(self):
+        """ Run the optimizer using the informations above
+        """
         population = self.constructFirstPopulation()
         flags = self.getFlagOptions()
         main(population, flags) 
         
-    #def main(self):
-     #   self.runOptimization()
-
 
 if __name__ == "__main__":
     COpt().runOptimization()
