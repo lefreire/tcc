@@ -74,27 +74,26 @@ class Island:
         return individual_def
 
     def islandMethod(self, population, flag_option):
-       #defining some numbers
-       no_pop = 10
-       no_generations = 50
-       no_individuals = 6
-       #defining my problem
-       prob = pg.problem(Island(no_individuals))
-       #prob = pg.problem(pg.rosenbrock(dim = 4))
-       print prob
+        #defining some numbers
+        no_pop = 10
+        no_generations = 50
+        no_individuals = 6
+        #defining my problem
+        prob = pg.problem(Island(no_individuals))
+        #prob = pg.problem(pg.rosenbrock(dim = 4))
+        print prob
 
-       for i in range(0, 1):
-           #creating my population
-           pop = pg.population(prob)
-           print pop
-           #generating the individuals
-           for i in range(0, no_pop):
-               print "ENTREI AQUI"
-               #print "pop teste: ", population[i]
-               #pop.push_back(x = population[i])
-               pop.push_back(x = population[i])
+        for i in range(0, 1):
+            #creating my population
+            pop = pg.population(prob)
+            print pop
+            #generating the individuals
+            for i in range(0, no_pop):
+                print "ENTREI AQUI"
+                #print "pop teste: ", population[i]
+                #pop.push_back(x = population[i])
+                pop.push_back(x = population[i])
         print "POPULACAO: ", pop
-
         values = []
         algo = pg.algorithm(pg.sga(gen=no_generations, cr=0.3, m=0.1, selection = "tournament"))
         algo.set_verbosity(1)
