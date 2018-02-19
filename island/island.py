@@ -15,10 +15,17 @@ sys.path.insert(0, '../framework/')
 from test import *
 
 class Island:
+    """ Class to run the optimizer using the island method 
+    """
     def __init__(self, dim):
+        """ Constructor
+        """
         self.dim = dim
 
     def compileCode(self, individual):
+        """ Method to compile the target code
+            This method uses methods defined by the user  
+        """
         test = Test()
         pathCompile = test.pathToCompile()
         commandCompile = test.argumentsToCompile()
@@ -38,6 +45,10 @@ class Island:
         print "======= Changing directory ======="
    
     def cleanCode(self):
+        """ Method to clean the target code
+            This method uses methods defined by the user
+            It cleans all the executable files
+        """
         test = Test()
         path = os.getcwd()
         pathClean = test.pathToClean()
@@ -54,6 +65,10 @@ class Island:
 
 
     def fitness(self, x):
+        """ Method to calculate the fitness value
+            This method uses methods defined by the user
+            The method name and the return is required for the pygmo structure to work the island method
+        """
         test = Test()
         self.compileCode(x) 
         y =  test.evaluationFunction(x)
@@ -63,9 +78,15 @@ class Island:
 
 
     def get_bounds(self):
+        """ Method returns the bound values
+            The method name and the return is required for the pygmo structure to work the island method
+        """
         return ([1] * self.dim, [6] * self.dim)
  
     def changeFlags(self, individual, options):
+        """ Method returns the population with the flags
+            In this method, if the bool value is 1, it is switched to the correspondent flag
+        """
         individual_def = ""
         for ind in xrange(0, len(individual)):
             print options
@@ -74,6 +95,8 @@ class Island:
         return individual_def
 
     def islandMethod(self, population, flag_option):
+        """ Method to run the optimizer
+        """
         #defining some numbers
         no_pop = 10
         no_generations = 50
