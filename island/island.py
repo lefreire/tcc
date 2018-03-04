@@ -12,7 +12,11 @@ from decimal import Decimal
 #importing class
 import sys
 sys.path.insert(0, '../framework/')
-from test import *
+sys.path.insert(0, '../configure/')
+# from userClass import *
+from configure import *
+import importlib
+import os, subprocess
 
 class Island:
     """ Class to run the optimizer using the island method 
@@ -26,11 +30,14 @@ class Island:
         """ Method to compile the target code
             This method uses methods defined by the user  
         """
-        test = Test()
-        pathCompile = test.pathToCompile()
-        commandCompile = test.argumentsToCompile()
-        print commandCompile
-        flags = test.initialFlags()
+        # userClass = userClass()
+        module = importlib.import_module(getClass())
+        my_class = getattr(module, getClassName())
+        userClass = my_class()
+        pathCompile = userClass.pathToCompile()
+        commandCompile = userClass.argumentsToCompile()
+        # print commandCompile
+        flags = userClass.initialFlags()
         individual = self.changeFlags(individual, flags)
         commandCompile = commandCompile + " CXXFLAGS="+ individual
 
@@ -39,6 +46,7 @@ class Island:
         print "======= Changing directory ======="
         my_env = os.environ.copy()
         my_env["PATH"] = "/usr/sbin:/sbin:" + my_env["PATH"]
+        print commandCompile
         p = subprocess.Popen(commandCompile, shell=True, stdout=subprocess.PIPE)
         out, err =  p.communicate()
         os.chdir(path)
@@ -49,10 +57,13 @@ class Island:
             This method uses methods defined by the user
             It cleans all the executable files
         """
-        test = Test()
+        # userClass = userClass()
+        module = importlib.import_module(getClass())
+        my_class = getattr(module, getClassName())
+        userClass = my_class()
         path = os.getcwd()
-        pathClean = test.pathToClean()
-        commandClean = test.argumentsToClean()
+        pathClean = userClass.pathToClean()
+        commandClean = userClass.argumentsToClean()
 
         os.chdir(pathClean)
         print "======= Changing directory ======="
@@ -69,10 +80,13 @@ class Island:
             This method uses methods defined by the user
             The method name and the return is required for the pygmo structure to work the island method
         """
-        test = Test()
+        # userClass = userClass()
+        module = importlib.import_module(getClass())
+        my_class = getattr(module, getClassName())
+        userClass = my_class()
         self.compileCode(x) 
-        y =  test.evaluationFunction(x)
-
+        y =  userClass.evaluationFunction(x)
+        print "evaluation: ", y
         self.cleanCode()
         return [y]
 
@@ -91,15 +105,16 @@ class Island:
         for ind in xrange(0, len(individual)):
             print options
             if individual[ind]:
-                indivual_def = individual_def + " " + options[ind]
+                individual_def = individual_def + " " + options[ind]
+        individual_def = '"' + individual_def + '"'
         return individual_def
 
     def islandMethod(self, population, flag_option):
         """ Method to run the optimizer
         """
         #defining some numbers
-        no_pop = 10
-        no_generations = 50
+        no_pop = 2
+        no_generations = 5
         no_individuals = 6
         #defining my problem
         prob = pg.problem(Island(no_individuals))
@@ -113,7 +128,7 @@ class Island:
             #generating the individuals
             for i in range(0, no_pop):
                 print "ENTREI AQUI"
-                #print "pop teste: ", population[i]
+                #print "pop userClasse: ", population[i]
                 #pop.push_back(x = population[i])
                 pop.push_back(x = population[i])
         print "POPULACAO: ", pop
@@ -135,7 +150,7 @@ class Island:
                       + ' , number generation= '+ str(no_generations), bbox={'facecolor': '0.8', 'pad': 5})
         #saving the figure
         plt.savefig('my_fig_problem_'+str(no_generations)+'.png')
-        plt.savefig('graphicChanges/myfig_elitism_'+str(no_generations)+'.png')
+        plt.savefig('island/graphicChanges/myfig_elitism_'+str(no_generations)+'.png')
         #plt.show()
 
 def main(population, flag_option):
