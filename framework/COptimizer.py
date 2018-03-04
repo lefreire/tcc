@@ -2,9 +2,12 @@ import random
 #importing method
 import sys
 sys.path.insert(0, '../island/')
-from my_problem import *
+sys.path.insert(0, '../configure/')
+from island import *
 #importing user methods
-from test import *
+from configure import *
+import importlib
+# from test import *
 
 class COpt():
     """ Class to run the optimizer 
@@ -29,8 +32,11 @@ class COpt():
     def getFlagOptions(self):
         """ Getting the flag options defined by the user
         """
-        test = Test()
-        return test.initialFlags()
+        # test = Test()
+        module = importlib.import_module(getClass())
+        my_class = getattr(module, getClassName())
+        userClass = my_class()
+        return userClass.initialFlags()
 
     def constructFirstPopulation(self):
         """ Constructing the first population 
