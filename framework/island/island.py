@@ -11,10 +11,10 @@ import matplotlib.pyplot as plt
 from decimal import Decimal
 #importing class
 import sys
-sys.path.insert(0, '../framework/')
-sys.path.insert(0, '../configure/')
+# sys.path.insert(0, '../framework/')
+# sys.path.insert(0, '../configure/')
 # from userClass import *
-from configure import *
+from configure.configure import *
 import importlib
 import os, subprocess
 
@@ -31,8 +31,8 @@ class Island:
             This method uses methods defined by the user  
         """
         # userClass = userClass()
-        module = importlib.import_module(getClass())
-        my_class = getattr(module, getClassName())
+        module = importlib.import_module('framework.'+get_class())
+        my_class = getattr(module, get_class_name())
         userClass = my_class()
         pathCompile = userClass.pathToCompile()
         commandCompile = userClass.argumentsToCompile()
@@ -81,8 +81,8 @@ class Island:
             The method name and the return is required for the pygmo structure to work the island method
         """
         # userClass = userClass()
-        module = importlib.import_module(getClass())
-        my_class = getattr(module, getClassName())
+        module = importlib.import_module('framework.'+get_class())
+        my_class = getattr(module, get_class_name())
         userClass = my_class()
         self.compileCode(x) 
         y =  userClass.evaluationFunction(x)
