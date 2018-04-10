@@ -2,7 +2,7 @@ import random
 #importing method
 import sys
 sys.path.insert(0, '/usr/local/lib/python2.7/site-packages')
-from island.island import *
+from framework.island.island import *
 #importing user methods
 from configure.configure import *
 import importlib
@@ -32,11 +32,11 @@ class COpt():
         """ Getting the flag options defined by the user
         """
         # test = Test()
-        module = importlib.import_module('framework.'+getClass())
+        module = importlib.import_module('framework.'+get_class())
         print module
-        my_class = getattr(module, getClassName())
+        my_class = getattr(module, get_class_name())
         userClass = my_class()
-        return userClass.initialFlags()
+        return userClass.initial_flags()
 
     def construct_first_population(self):
         """ Constructing the first population 
