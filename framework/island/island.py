@@ -26,7 +26,7 @@ class Island:
         """
         self.dim = dim
 
-    def compileCode(self, individual):
+    def compile_code(self, individual):
         """ Method to compile the target code
             This method uses methods defined by the user  
         """
@@ -34,12 +34,12 @@ class Island:
         module = importlib.import_module('framework.'+get_class())
         my_class = getattr(module, get_class_name())
         userClass = my_class()
-        pathCompile = userClass.pathToCompile()
-        commandCompile = userClass.argumentsToCompile()
+        pathCompile = userClass.path_to_compile()
+        commandCompile = userClass.arguments_to_compile()
         # print commandCompile
-        flags = userClass.initialFlags()
-        individual = self.changeFlags(individual, flags)
-        commandCompile = commandCompile + " CXXFLAGS="+ individual
+        flags = userClass.initial_flags()
+        individual = self.change_flags(individual, flags)
+        commandCompile = "TUNE="+ individual + " " + commandCompile 
 
         path = os.getcwd()
         os.chdir(pathCompile)
@@ -52,18 +52,18 @@ class Island:
         os.chdir(path)
         print "======= Changing directory ======="
    
-    def cleanCode(self):
+    def clean_code(self):
         """ Method to clean the target code
             This method uses methods defined by the user
             It cleans all the executable files
         """
         # userClass = userClass()
-        module = importlib.import_module(getClass())
-        my_class = getattr(module, getClassName())
+        module = importlib.import_module('framework.'+get_class())
+        my_class = getattr(module, get_class_name())
         userClass = my_class()
         path = os.getcwd()
-        pathClean = userClass.pathToClean()
-        commandClean = userClass.argumentsToClean()
+        pathClean = userClass.path_to_clean()
+        commandClean = userClass.arguments_to_clean()
 
         os.chdir(pathClean)
         print "======= Changing directory ======="
@@ -84,10 +84,10 @@ class Island:
         module = importlib.import_module('framework.'+get_class())
         my_class = getattr(module, get_class_name())
         userClass = my_class()
-        self.compileCode(x) 
-        y =  userClass.evaluationFunction(x)
+        self.compile_code(x) 
+        y =  userClass.evaluation_function(x)
         print "evaluation: ", y
-        self.cleanCode()
+        self.clean_code()
         return [y]
 
 
@@ -97,7 +97,7 @@ class Island:
         """
         return ([1] * self.dim, [6] * self.dim)
  
-    def changeFlags(self, individual, options):
+    def change_flags(self, individual, options):
         """ Method returns the population with the flags
             In this method, if the bool value is 1, it is switched to the correspondent flag
         """
@@ -109,7 +109,7 @@ class Island:
         individual_def = '"' + individual_def + '"'
         return individual_def
 
-    def islandMethod(self, population, flag_option):
+    def island_method(self, population, flag_option):
         """ Method to run the optimizer
         """
         #defining some numbers
@@ -154,7 +154,7 @@ class Island:
         #plt.show()
 
 def main(population, flag_option):
-    Island(6).islandMethod(population, flag_option)
+    Island(6).island_method(population, flag_option)
 
 
 if __name__ == "__main__":

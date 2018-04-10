@@ -1,6 +1,6 @@
 import ConfigParser
 
-def getClass():
+def get_class():
     Config = ConfigParser.ConfigParser()
     Config.read('configure/myfile.ini')
     # print Config
@@ -8,7 +8,7 @@ def getClass():
     sections = Config.sections()
     return Config.get('ClassImport', 'Name')
 
-def getClassName():
+def get_class_name():
     Config = ConfigParser.ConfigParser()
     Config.read('configure/myfile.ini')
     sections = Config.sections()

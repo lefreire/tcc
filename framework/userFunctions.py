@@ -5,7 +5,7 @@ class UserParameters:
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
-    def initialFlags(self):
+    def initial_flags(self):
         """Method to be implemented by the user
             Set the initial list of flags to be used in the optimization
         
@@ -17,7 +17,7 @@ class UserParameters:
         return
 
     @abc.abstractmethod
-    def pathToCompile(self):
+    def path_to_compile(self):
         """Method to be implemented by the user
             Method to have the path to the compiling file
 
@@ -29,7 +29,7 @@ class UserParameters:
         return
 
     @abc.abstractmethod
-    def argumentsToCompile(self):
+    def arguments_to_compile(self):
         """Method to be implemented by the user
             Method to have the way to run the Makefile or similar
 
@@ -41,7 +41,7 @@ class UserParameters:
         return 
 
     @abc.abstractmethod
-    def argumentsToRunCode(self):
+    def arguments_to_run_code(self):
         """Method to be implemented by the user
             Method to have the way to run the executable file
 
@@ -53,7 +53,7 @@ class UserParameters:
         return
 
     @abc.abstractmethod
-    def evaluationFunction(self, x):
+    def evaluation_function(self, x):
         """Method to be implemented by the user
             Method to do the evaluation of the code to be optimized
 
@@ -65,7 +65,7 @@ class UserParameters:
         return
 
     @abc.abstractmethod
-    def pathToClean(self):
+    def path_to_clean(self):
         """Method to be implemented by the user
             Method to have the way to run the Makefile or similar to clean the executable files
 
@@ -77,7 +77,7 @@ class UserParameters:
         return 
 
     @abc.abstractmethod
-    def argumentsToClean(self):
+    def arguments_to_clean(self):
         """Method to be implemented by the user
            Method to have the way to run the clean the executable files
 

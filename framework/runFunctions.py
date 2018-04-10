@@ -6,7 +6,7 @@ class runOptimizer():
     def __init__(self):
         self.testVariable =  Test()
 
-    def runMakefile(self):
+    def run_makefile(self):
         path = self.testVariable.pathToCompile()
 	os.chdir(path)
         print "======= Changing directory ======="
@@ -28,5 +28,5 @@ class runOptimizer():
         
 
 y = runOptimizer()
-y.runMakefile()
+y.run_makefile()
         
