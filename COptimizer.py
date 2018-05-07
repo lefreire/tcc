@@ -4,7 +4,6 @@ import random
 import sys
 sys.path.insert(0, '/usr/local/lib/python2.7/site-packages')
 from framework.island.island import main
-# from configure.configure import *
 
 
 class COpt():
@@ -19,17 +18,6 @@ class COpt():
         my_class = getattr(module, klasses[0][0])
         self.user_class = my_class()
 
-    def initial_parameters(self):
-        """ Defining initial parameters to pass to the optimizer 
-        """
-        args = 5*[0]
-        args[0] = 50 #number of generations
-        args[1] = 10 # size of population
-        args[2] = 6 #size of individual
-        args[3] = 0.3 #crossover rate
-        args[4] = 0.1 #mutation rate
-        return args
-
     def get_flags(self):
         """ Getting the flag options defined by the user
         """
@@ -37,16 +25,19 @@ class COpt():
 
     def construct_first_population(self):
         """ Constructing the first population 
-            This first population is composed by 0's and 1's, representing if the flag is present in the population or not
+            This first population is composed by 0's and 1's, 
+            representing if the flag is present in the population 
+            or not
         """
         options = self.get_flags()
-        no_options = len(options)
-        parameters = self.initial_parameters()
+        no_ind = self.user_class.dict_optimization["individual_size"]
+        no_pop = self.user_class.dict_optimization["no_pop"]
         individuos = []
-        for ind in xrange(0, parameters[1]):
+        for ind in xrange(0, no_pop):
             individual_first = []
-            for individual in xrange(0, no_options):
-                individual_first = individual_first + [random.randint(0,1)]
+            for individual in xrange(0, no_ind):
+                individual_first = individual_first + 
+                                   [random.randint(0,1)]
             individuos = individuos + [individual_first]
         return individuos
 
@@ -62,5 +53,5 @@ if __name__ == "__main__":
     COpt().run_optimization()
 
 # x = COpt()
-# print x.get_flags()
+# print x.initial_parameters()
 
