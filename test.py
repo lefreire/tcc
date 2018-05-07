@@ -1,4 +1,4 @@
-from framework.userFunctions import UserParameters
+from src.userFunctions import UserParameters
 import os
 import subprocess
 import time
@@ -8,12 +8,9 @@ class Test(UserParameters):
     """
 
     def __init__(self):
-        self.flags_list = ["-O1", "-O2", "-O3"]
+        super(Test, self).__init__()
         self.compile_path = os.getcwd() + "/codeToTest"
-        self.compile_command = "make"
         self.clean_path = os.getcwd() + "/codeToTest"
-        self.clean_command = "make clean"
-        self.min_max = 1
 
     def arguments_to_run_code(self):
         """ Implementing the method arguments_to_run_code.
@@ -46,5 +43,6 @@ class Test(UserParameters):
         return value 
 
 
-# x = Test()
+x = Test()
+print x.macro
 # print x.evaluation_function()
