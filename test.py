@@ -20,8 +20,10 @@ class Test(UserParameters):
 
     def evaluation_function(self):
         """ Implementing the method evaluation_functionn.
-            This method returns the value to be optimized by the framework.
-            In this method, the user needs to run the executable file and get the value to pass
+            This method returns the value to be optimized by the 
+            framework.
+            In this method, the user needs to run the executable file 
+            and get the value to pass
             to the framework.
         """
         def_path = os.getcwd() 
@@ -33,7 +35,8 @@ class Test(UserParameters):
         my_command = self.arguments_to_run_code()
         #counting time 
         t0 = time.time()
-        p = subprocess.Popen(my_command, shell=True, stdout=subprocess.PIPE)
+        p = subprocess.Popen(my_command, shell=True, 
+                             stdout=subprocess.PIPE)
         out, err =  p.communicate()
         #finalizing
         value = time.time() - t0
@@ -43,6 +46,3 @@ class Test(UserParameters):
         return value 
 
 
-x = Test()
-print x.macro
-# print x.evaluation_function()
