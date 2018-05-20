@@ -2,7 +2,7 @@ from os import getcwd, chdir, environ
 from subprocess import Popen, PIPE
 
 
-class Pre(object):
+class CompClean(object):
 
     def __init__(self, user_class):
         self.user_class = user_class
@@ -26,7 +26,7 @@ class Pre(object):
             compile_command = self.user_class.compile_command 
             flags = self.user_class.flags_list
             individual = self.__change_flags(individual, flags)
-            compile_command = "CXXFLAGS="+ individual + " " + compile_command
+            compile_command = self.user_class.macro+"="+ individual + " " + compile_command
 
             path = getcwd()
             chdir(compile_path)
@@ -37,5 +37,20 @@ class Pre(object):
             process = Popen(compile_command, shell=True, stdout=PIPE)
             out, err =  process.communicate()
             chdir(path)
-        
 
+    def clean_code(self):
+        """ Method to clean the target code
+            This method uses methods defined by the user
+            It cleans all the executable files
+        """
+        path = getcwd()
+        clean_path = self.user_class.clean_path
+        clean_command = self.user_class.clean_command 
+
+        chdir(clean_path)
+
+        my_env = environ.copy()
+        my_env["PATH"] = "/usr/sbin:/sbin:" + my_env["PATH"]
+        process = Popen(clean_command, shell=True, stdout=PIPE)
+        out, err =  process.communicate()
+        chdir(path)

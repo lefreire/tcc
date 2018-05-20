@@ -10,8 +10,7 @@ import pygmo as pg
 from random import randint
 import subprocess
 import sys
-from framework.pre import Pre
-from framework.pos import Pos
+from framework.compClean import CompClean
 
 
 class Island:
@@ -22,8 +21,7 @@ class Island:
         """
         self.user_class = user_class
         self.dim = dim
-        self.pos = Pos(self.user_class)
-        self.pre = Pre(self.user_class)
+        self.compClean = CompClean(self.user_class)
         self.no_pop = 0
         self.no_generations = 0
         self.no_individuals = 0
@@ -53,11 +51,12 @@ class Island:
             The method name and the return is required for the 
             pygmo structure to work the island method
         """
-        # userClass = userClass()
-        self.pre.compile_code(x) 
+        self.user_class.pre()
+        self.compClean.compile_code(x) 
         y =  self.user_class.evaluation_function()
         print "evaluation: ", y
-        self.pos.clean_code()
+        self.compClean.clean_code()
+        self.user_class.pos()
         return [y]
 
     def get_bounds(self):
