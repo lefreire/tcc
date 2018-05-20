@@ -68,6 +68,13 @@ class UserParameters:
         return
 
     @abstractmethod
+    def pre(self):
+        """Method to be implemented by the user
+           This method will be executed before every compilation and evaluation.
+        """
+        return
+
+    @abstractmethod
     def arguments_to_run_code(self):
         """Method to be implemented by the user
             Method to have the way to run the executable file 
@@ -90,3 +97,10 @@ class UserParameters:
             This method returns the value to be optimized.
         """
         return
+
+    @abstractmethod
+    def pos(self):
+        """Method to be implemented by the user
+           This method will be executed after cleaning the executable files.
+        """
+        return 
