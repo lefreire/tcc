@@ -9,6 +9,11 @@ class Test(UserParameters):
 
     def __init__(self):
         super(Test, self).__init__()
+        self.dict_optimization = {"no_generations": 3, 
+                                  "no_pop": 2, 
+                                  "individual_size": 3, 
+                                  "crossover_rate": 0.3, 
+                                  "mutation_rate": 0.1}
         self.compile_path = os.getcwd() + "/codeToTest"
         self.clean_path = os.getcwd() + "/codeToTest"
 
@@ -45,4 +50,9 @@ class Test(UserParameters):
     
         return value 
 
+    def pre(self):
+        pass
+
+    def pos(self):
+        pass
 

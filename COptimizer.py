@@ -36,9 +36,8 @@ class COpt():
         for ind in xrange(0, no_pop):
             individual_first = []
             for individual in xrange(0, no_ind):
-                individual_first = individual_first + 
-                                   [random.randint(0,1)]
-            individuos = individuos + [individual_first]
+                individual_first.append(random.randint(0,1))
+            individuos.append(individual_first)
         return individuos
 
     def run_optimization(self):
