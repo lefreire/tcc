@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 import os
+from src.results import Results
 
 
 class UserParameters:
@@ -60,11 +61,12 @@ class UserParameters:
         self.min_max = 1
         self.macro = "CXXFLAGS"
         self.method_optimization = "island"
-        self.dict_optimization = {"no_generations": 50, 
-                                  "no_pop": 100, 
+        self.dict_optimization = {"no_generations": 2, 
+                                  "no_pop": 2, 
                                   "individual_size": 3, 
                                   "crossover_rate": 0.3, 
                                   "mutation_rate": 0.1}
+        self.results = Results(self)
         return
 
     @abstractmethod
@@ -104,3 +106,8 @@ class UserParameters:
            This method will be executed after cleaning the executable files.
         """
         return 
+
+    # def results(self, value):
+    #     print "dentro usuario: ", value
+    #     self.test.append(value)
+    #     print "ainda dentro do usuario: ", self.test

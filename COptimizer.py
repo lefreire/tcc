@@ -51,6 +51,5 @@ class COpt():
 if __name__ == "__main__":
     COpt().run_optimization()
 
-# x = COpt()
-# print x.initial_parameters()
+
 

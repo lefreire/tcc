@@ -9,7 +9,7 @@ class Test(UserParameters):
 
     def __init__(self):
         super(Test, self).__init__()
-        self.dict_optimization = {"no_generations": 3, 
+        self.dict_optimization = {"no_generations": 2, 
                                   "no_pop": 2, 
                                   "individual_size": 3, 
                                   "crossover_rate": 0.3, 
@@ -47,7 +47,7 @@ class Test(UserParameters):
         value = time.time() - t0
 
         os.chdir(def_path)
-    
+        self.results.set_values_evaluation(value)
         return value 
 
     def pre(self):
