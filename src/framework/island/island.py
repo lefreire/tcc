@@ -93,7 +93,7 @@ class Island(object):
         """
         return ([0] * self.dim, [1] * self.dim)
 
-    def create_population(self, prob, population):
+    def create_population(self, prob, population_list):
         """ Method to set the population using push_back method
 
         Returns
@@ -103,7 +103,7 @@ class Island(object):
         """
         pop = population(prob)
         for i in range(0, self.no_pop):
-            pop.push_back(x=population[i])
+            pop.push_back(x=population_list[i])
         return pop
 
     def island_method(self, population, flag_option, user_class):

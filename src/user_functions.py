@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+from os import getcwd
 
 
 class UserParameters(object):
@@ -52,9 +53,9 @@ class UserParameters(object):
                 -mutation_rate: mutation rate; must be between 0 and 1
         """
         self.flags_list = ["-O1", "-O2", "-O3"]
-        self.compile_path = os.getcwd()
+        self.compile_path = getcwd()
         self.compile_command = "make"
-        self.clean_path = os.getcwd()
+        self.clean_path = getcwd()
         self.clean_command = "make clean"
         self.min_max = 1
         self.macro = "CXXFLAGS"
