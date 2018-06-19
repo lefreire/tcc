@@ -1,12 +1,10 @@
 from abc import ABCMeta, abstractmethod
-import os
-from src.results import Results
 
 
-class UserParameters:
+class UserParameters(object):
     __metaclass__ = ABCMeta
 
-    # @abc.abstractmethod
+    @abstractmethod
     def __init__(self):
         """Method to be implemented by the user
             Set the initial list of flags to be used in the 
@@ -61,12 +59,11 @@ class UserParameters:
         self.min_max = 1
         self.macro = "CXXFLAGS"
         self.method_optimization = "island"
-        self.dict_optimization = {"no_generations": 2, 
-                                  "no_pop": 2, 
-                                  "individual_size": 3, 
-                                  "crossover_rate": 0.3, 
+        self.dict_optimization = {"no_generations": 3,
+                                  "no_pop": 2,
+                                  "individual_size": 3,
+                                  "crossover_rate": 0.3,
                                   "mutation_rate": 0.1}
-        self.results = Results(self)
         return
 
     @abstractmethod
@@ -79,12 +76,13 @@ class UserParameters:
     @abstractmethod
     def arguments_to_run_code(self):
         """Method to be implemented by the user
-            Method to have the way to run the executable file 
+        Method to have the way to run the executable file 
 
         Returns
         -------
-        command : string
-            Command indicating how to run the executable file.
+        command: string
+        Command indicating how to run the executable file.
+
         """
         return
 
@@ -105,9 +103,4 @@ class UserParameters:
         """Method to be implemented by the user
            This method will be executed after cleaning the executable files.
         """
-        return 
-
-    # def results(self, value):
-    #     print "dentro usuario: ", value
-    #     self.test.append(value)
-    #     print "ainda dentro do usuario: ", self.test
+        return

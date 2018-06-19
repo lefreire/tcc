@@ -8,45 +8,45 @@ import matplotlib.pyplot as plt
 
 class Results(object):
 
-    def __init__(self, user_class):
-        self.tmp_values_evaluation = []
-        self.min_max = 1#user_class.min_max 
-        self.no_pop= 2#user_class.dict_optimization['no_pop']
-        self.def_values_evaluation = []
-        self.path = "./"
+    def __init__(self, user_class, result_type, path='./'):
+        """ Constructor
 
-    def set_values_evaluation(self, value):
-        self.tmp_values_evaluation.append(value)
-        if fmod(len(self.tmp_values_evaluation), self.no_pop) == 0.0:
-            self.set_def_values_evaluation()
-            
-    def set_def_values_evaluation(self):
-        if self.min_max == 1:
-            self.def_values_evaluation.append(min(self.tmp_values_evaluation))
-        else: 
-            self.def_values_evaluation.append(max(self.tmp_values_evaluation))
-        self.tmp_values_evaluation = []
+        Parameters
+        ----------
+        user_class: class defined by the user
+        result_type: resolve if the result will be printed in the screen or
+                    will be in the graphic
+        path: path where to save the results 
+        """
+        self.no_pop = user_class.dict_optimization['no_pop']
+        self.path = path
+        self.result_type = result_type
 
-    def funcao_normal(self):
-        print "vetor def: ", self.def_values_evaluation
-
-    def log(self):
+    def log(self, list_generations, list_values):
+        """ Method to print in the screen the main results
+        """
         print("Results:\n")
         print('{} {:^10}'.format('Generation: ', 'Value: '))
-        results = list(enumerate(self.def_values_evaluation))
-        for result in results:
-            print('{} {:^20}'.format(result[0]+1, result[1]))
+        for res in range(len(list_generations)):
+            print('{} {:^20}'.format(list_generations[res], list_values[res]))
 
-    def graphic(self):
-        gen, values = zip(*list(enumerate(self.def_values_evaluation)))
-        # gen, values = zip(*results)
-        plt.plot(gen, values, linewidth=2.5, 
-                 label  = "Island: "+ str('%.2E' % Decimal(values[-1])))
+    def graphic(self, list_generations, list_values):
+        """ Method to draw in a graphic the main results
+        """
+        plt.plot(list_generations, list_values, linewidth=2.5,
+                 label="Island: " + str('%.2E' % Decimal(list_values[-1])))
         plt.legend(bbox_to_anchor=(0.5, 0), loc=3,
                    ncol=2, mode="expand", borderaxespad=0.)
         plt.xlabel('generations')
         plt.ylabel('best evaluate')
-        plt.title('Generation with: population= ' + str(self.no_pop), 
-                    bbox={'facecolor': '0.8', 'pad': 5}) 
+        plt.title('Generation with: population= ' + str(self.no_pop),
+                  bbox={'facecolor': '0.8', 'pad': 5})
         plt.savefig("{}island_{}.png".format(self.path, str(self.no_pop)))
-        # plt.savefig(str(self.no_pop)+'.png')       
+
+    def get_results(self, list_generations, list_values):
+        """ Method to choose how the user wants to see their results
+        """
+        if self.result_type == 'log':
+            self.log(list_generations, list_values)
+        else:
+            self.graphic(list_generations, list_values)
