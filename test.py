@@ -3,24 +3,25 @@ import os
 import subprocess
 import time
 
+
 class Test(UserParameters):
     """ Class to test the abstract class UserParameters 
     """
 
     def __init__(self):
         super(Test, self).__init__()
-        self.dict_optimization = {"no_generations": 2, 
-                                  "no_pop": 2, 
-                                  "individual_size": 3, 
-                                  "crossover_rate": 0.3, 
+        self.dict_optimization = {"no_generations": 3,
+                                  "no_pop": 2,
+                                  "individual_size": 3,
+                                  "crossover_rate": 0.3,
                                   "mutation_rate": 0.1}
-        self.compile_path = os.getcwd() + "/codeToTest"
-        self.clean_path = os.getcwd() + "/codeToTest"
+        self.compile_path = os.getcwd() + "/examples/codeToTest"
+        self.clean_path = os.getcwd() + "/examples/codeToTest"
 
     def arguments_to_run_code(self):
         """ Implementing the method arguments_to_run_code.
             This method returns the command to run the executable file
-        """ 
+        """
         return"./nbody.gpp-3.gpp_run 50000000"
 
     def evaluation_function(self):
@@ -31,28 +32,26 @@ class Test(UserParameters):
             and get the value to pass
             to the framework.
         """
-        def_path = os.getcwd() 
+        def_path = os.getcwd()
         os.chdir(self.compile_path)
 
         my_env = os.environ.copy()
         my_env["PATH"] = "/usr/sbin:/sbin:" + my_env["PATH"]
 
         my_command = self.arguments_to_run_code()
-        #counting time 
+        # counting time
         t0 = time.time()
-        p = subprocess.Popen(my_command, shell=True, 
+        p = subprocess.Popen(my_command, shell=True,
                              stdout=subprocess.PIPE)
-        out, err =  p.communicate()
-        #finalizing
+        out, err = p.communicate()
+        # finalizing
         value = time.time() - t0
 
         os.chdir(def_path)
-        self.results.set_values_evaluation(value)
-        return value 
+        return value
 
     def pre(self):
         pass
 
     def pos(self):
         pass
-
