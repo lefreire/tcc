@@ -1,4 +1,4 @@
-from src.userFunctions import UserParameters
+from src.user_functions import UserParameters
 import os
 import subprocess
 import time

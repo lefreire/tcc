@@ -1,5 +1,5 @@
 from pygmo import problem, population, algorithm, sga
-from src.framework.compClean import CompClean
+from src.framework.comp_clean import CompClean
 from src.results import Results
 
 
