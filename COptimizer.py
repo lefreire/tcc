@@ -7,7 +7,7 @@ from src.framework.island.island import main
 from src.results import Results
 
 
-class COpt():
+class COptimizer():
     """ Class to run the optimizer 
     """
 
@@ -71,6 +71,9 @@ class COpt():
         flags = self.get_flags()
         main(self.user_class, population, flags, self.results)
 
+    def main(self):
+        self.run_optimization()
 
-if __name__ == "__main__":
-    COpt().run_optimization()
+
+# if __name__ == "__main__":
+#     COpt().run_optimization()

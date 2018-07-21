@@ -2,6 +2,7 @@ from src.user_functions import UserParameters
 import os
 import subprocess
 import time
+from COptimizer import COptimizer
 
 
 class Test(UserParameters):
@@ -55,3 +56,9 @@ class Test(UserParameters):
 
     def pos(self):
         pass
+
+
+if __name__ == '__main__':
+    c = COptimizer()
+    print(id(c))
+    COptimizer().main()
