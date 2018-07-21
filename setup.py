@@ -9,4 +9,5 @@ setup(
     packages=find_packages(),
     license='Apache License',
     install_requires=['setuptools', 'numpy', 'matplotlib'],
+    package_dir={'COptimizer': 'COptimizer'}
     )
