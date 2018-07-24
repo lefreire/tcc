@@ -9,9 +9,9 @@ setup(
     packages=find_packages(),
     license='Apache License',
     install_requires=['setuptools', 'numpy', 'matplotlib'],
-    package_dir={'COptimizer': './PyCoptimizer/COptimizer',
-                 'UserParameters': './PyCoptimizer/UserParameters',
+    package_dir={'COptimizer': './PyCoptimizer/coptimizer',
+                 'UserParameters': './PyCoptimizer/user_parameters',
                  'Results': './PyCoptimizer/results',
-                 'Comp_clean': './PyCoptimizer/framework/comp_clean',
+                 'CompClean': './PyCoptimizer/framework/comp_clean',
                  'Island': './PyCoptimizer/framework/island'}
 )
