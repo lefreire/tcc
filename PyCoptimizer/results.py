@@ -18,9 +18,19 @@ class Results(object):
                     will be in the graphic
         path: path where to save the results 
         """
+        self.user_class = user_class
         self.no_pop = user_class.dict_optimization['no_pop']
         self.path = path
         self.result_type = result_type
+        self.best_ind = []
+        self.best_ind_bin = []
+
+    def translate_individual(self):
+        if len(self.best_ind_bin):
+            list_ind = zip(self.best_ind_bin, self.user_class.flags_list)
+            for individual in list_ind:
+                if individual[0]:
+                    self.best_ind.append(individual[1])
 
     def log(self, list_generations, list_values):
         """ Method to print in the screen the main results
@@ -29,6 +39,7 @@ class Results(object):
         print('{} {:^10}'.format('Generation: ', 'Value: '))
         for res in range(len(list_generations)):
             print('{} {:^20}'.format(list_generations[res], list_values[res]))
+        print("Best individual: ", self.best_ind)
 
     def graphic(self, list_generations, list_values):
         """ Method to draw in a graphic the main results
@@ -42,10 +53,13 @@ class Results(object):
         plt.title('Generation with: population= ' + str(self.no_pop),
                   bbox={'facecolor': '0.8', 'pad': 5})
         plt.savefig("{}island_{}.png".format(self.path, str(self.no_pop)))
+        print("Best individual: ", self.best_ind)
 
-    def get_results(self, list_generations, list_values):
+    def get_results(self, list_generations, list_values, best_ind):
         """ Method to choose how the user wants to see their results
         """
+        self.best_ind_bin = best_ind
+        self.translate_individual()
         if self.result_type == 'log':
             self.log(list_generations, list_values)
         else:
