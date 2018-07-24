@@ -1,6 +1,6 @@
 from pygmo import problem, population, algorithm, sga
-from Comp_clean import CompClean
-from Results import Results
+from PyCoptimizer.framework.comp_clean import CompClean
+from PyCoptimizer.results import Results
 
 
 class Island(object):
@@ -128,16 +128,17 @@ class Island(object):
         algo.set_verbosity(2)
         self.pop = algo.evolve(self.pop)
         logs = algo.extract(sga).get_log()
-        return ([gen[0] for gen in logs], [val[2] for val in logs])
+        return ([gen[0] for gen in logs], [val[2] for val in logs],
+                self.pop.champion_x)
 
 
 def main(user_class, population, flag_option, results):
     """ Main method to call the island method
     """
     island = Island(user_class, population)
-    generations, values = island.island_method(
+    generations, values, best_ind = island.island_method(
         population, flag_option, user_class)
-    results.get_results(generations, values)
+    results.get_results(generations, values, best_ind)
 
 
 if __name__ == "__main__":

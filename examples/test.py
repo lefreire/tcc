@@ -1,8 +1,8 @@
-from UserParameters import UserParameters
+from PyCoptimizer.user_parameters import UserParameters
 import os
 import subprocess
 import time
-from COptimizer import COptimizer
+from PyCoptimizer.coptimizer import COptimizer
 
 
 class Test(UserParameters):
