@@ -62,9 +62,9 @@ class COptimizer(object):
         no_ind = self.user_class.dict_optimization["individual_size"]
         no_pop = self.user_class.dict_optimization["no_pop"]
         individuals = []
-        for ind in xrange(0, no_pop):
+        for ind in range(0, no_pop):
             individual_first = []
-            for individual in xrange(0, no_ind):
+            for individual in range(0, no_ind):
                 individual_first.append(random.randint(0, 1))
             individuals.append(individual_first)
         return individuals
