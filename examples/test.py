@@ -11,13 +11,20 @@ class Test(UserParameters):
 
     def __init__(self):
         super(Test, self).__init__()
-        self.dict_optimization = {"no_generations": 3,
-                                  "no_pop": 2,
-                                  "individual_size": 3,
+        self.dict_optimization = {"no_generations": 30,
+                                  "no_pop": 50,
+                                  "individual_size": 14,
                                   "crossover_rate": 0.3,
                                   "mutation_rate": 0.1}
         self.compile_path = os.getcwd() + "/codeToTest"
         self.clean_path = os.getcwd() + "/codeToTest"
+        self.flags_list = ["-finline-functions",  "-funswitch-loops", 
+                           "-fpredictive-commoning", "-fgcse-after-reload", 
+                           "-ftree-loop-vectorize", "-ftree-loop-distribution", 
+                           "-ftree-loop-distribute-patterns", "-floop-interchange",
+                           "-fsplit-paths", "-ftree-slp-vectorize",
+                           "-fvect-cost-model", "-ftree-partial-pre",
+                           "-fpeel-loops", "-fipa-cp-clone"]
 
     def arguments_to_run_code(self):
         """ Implementing the method arguments_to_run_code.
@@ -59,6 +66,4 @@ class Test(UserParameters):
 
 
 if __name__ == '__main__':
-    # import pdb; pdb.set_trace()
     COptimizer().main()
-
