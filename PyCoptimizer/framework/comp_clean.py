@@ -21,7 +21,7 @@ class CompClean(object):
             used in the compilation.
         """
         individual_def = ""
-        for ind in xrange(0, len(individual)):
+        for ind in range(0, len(individual)):
             if individual[ind] > 0.5:
                 individual_def = individual_def + " " + options[ind]
         individual_def = '"' + individual_def + '"'

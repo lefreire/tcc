@@ -16,8 +16,8 @@ class Test(UserParameters):
                                   "individual_size": 3,
                                   "crossover_rate": 0.3,
                                   "mutation_rate": 0.1}
-        self.compile_path = os.getcwd() + "/examples/codeToTest"
-        self.clean_path = os.getcwd() + "/examples/codeToTest"
+        self.compile_path = os.getcwd() + "/codeToTest"
+        self.clean_path = os.getcwd() + "/codeToTest"
 
     def arguments_to_run_code(self):
         """ Implementing the method arguments_to_run_code.
