@@ -1,0 +1,182 @@
+source: "Automatic Selection of Compiler Options using Non-Parametric Inferential Statistics"
+["-fomit-frame-pointer",
+"-fsched-interblock",
+"-fsched-spec", "-finline-functions",
+"-fsched-spec-load", "-fmerge-constants",
+"-fsched-spec-load-dangerous",
+"-fthread-jumps",
+"-fcse-follow-jumps",
+"-fcse-skip-blocks", "-fpeephole2",
+"-frerun-cse-after-loop",
+"-freorder-blocks",
+"-fgcse", "-freorder-functions",
+"-fgcse-lm", "-fstrict-aliasing",
+"-fgcse-sm",
+"-falign-functions", "-falign-labels",
+"-falign-loops",
+"-fcrossjumping", "-falign-jumps",
+"-fif-conversion", "-fcprop-registers",
+"-fif-conversion2", "-fcaller-saves",
+"-fdelete-null-pointer-checks",
+"-fdefer-pop", "-fexpensive-optimizations",
+"-ffunction-sections"]
+
+results:
+
+Generation:   Value:
+1  42.93871188163757
+3  42.103973150253296
+5  41.90530967712402
+7  41.73662281036377
+9  41.73662281036377
+11  41.73662281036377
+13  41.73662281036377
+15  41.73662281036377
+17  41.73662281036377
+19  41.73662281036377
+21  41.73662281036377
+23  41.73662281036377
+25  41.595301151275635
+27  41.595301151275635
+29  41.595301151275635
+31  41.595301151275635
+33  41.595301151275635
+35  41.595301151275635
+37  41.595301151275635
+39  41.595301151275635
+41  41.595301151275635
+43  41.595301151275635
+45  41.595301151275635
+47  41.595301151275635
+49  41.595301151275635
+Best individual:  ['-fomit-frame-pointer', '-finline-functions', '-fsched-spec-load', '-fmerge-constants', '-fsched-spec-load-dangerous', '-fpeephole2', '-frerun-cse-after-loop', '-fgcse', '-fstrict-aliasing', '-falign-functions', '-fcrossjumping', '-fcprop-registers', '-fcaller-saves', '-fdelete-null-pointer-checks']
+
+source: aleatório
+["-finline-functions", "-funswitch-loops",
+"-fpredictive-commoning", "-fgcse-after-reload",
+"-ftree-loop-distribution",
+"-ftree-loop-distribute-patterns", "-floop-interchange",
+"-ftree-slp-vectorize",
+"-ftree-partial-pre",
+"-fpeel-loops", "-fipa-cp-clone"]
+results:
+
+1     78.549311161
+3     78.473503828
+5    78.4484088421
+7     78.353374958
+9     78.353374958
+11     78.353374958
+13     78.353374958
+15    78.3491549492
+17    78.3491549492
+19    78.3491549492
+21    78.3491549492
+23    78.3491549492
+25    78.3491549492
+27    78.3491549492
+29    78.3491549492
+31    78.3402619362
+33    78.3402619362
+35    78.3402619362
+37    78.3402619362
+39    78.2028849125
+41    78.2028849125
+43    78.2028849125
+45    78.2028849125
+47    78.2028849125
+49    78.2028849125
+('Best individual: ', ['-funswitch-loops', '-fpredictive-commoning', '-fgcse-after-reload', '-ftree-loop-distribution', '-ftree-loop-distribute-patterns', '-ftree-partial-pre', '-fpeel-loops'])
+
+source: all flags from -O2 e -O3
+["-fauto-inc-dec", "-fbranch-count-reg",
+"-fcombine-stack-adjustments", "-fcompare-elim",
+"-fcprop-registers", "-fdce", "-fdefer-pop",
+"-fdelayed-branch", "-fdse", "-fforward-propagate",
+"-fguess-branch-probability",
+"-fif-conversion2", "-fif-conversion",
+"-finline-functions-called-once",
+"-fipa-pure-const", "-fipa-profile",
+"-fipa-reference", "-fmerge-constants",
+"-fmove-loop-invariants", "-fomit-frame-pointer",
+"-freorder-blocks", "-fshrink-wrap",
+"-fsplit-wide-types",
+"-fssa-phiopt",
+"-ftree-bit-ccp", "-ftree-ccp",
+"-ftree-ch", "-ftree-coalesce-vars",
+"-ftree-copy-prop", "-ftree-dce",
+"-ftree-dominator-opts", "-ftree-dse",
+"-ftree-forwprop", "-ftree-fre",
+"-ftree-phiprop", "-ftree-sink",
+"-ftree-slsr", "-ftree-sra",
+"-ftree-pta", "-ftree-ter",
+"-funit-at-a-time", "-fthread-jumps",
+"-falign-functions", "-falign-jumps",
+"-falign-loops", "-falign-labels",
+"-fcaller-saves", "-fcrossjumping",
+"-fcse-follow-jumps", "-fcse-skip-blocks",
+"-fdelete-null-pointer-checks",
+"-fdevirtualize", "-fdevirtualize-speculatively",
+"-fexpensive-optimizations",
+"-fgcse", "-fgcse-lm",
+"-fhoist-adjacent-loads",
+"-finline-small-functions",
+"-findirect-inlining",
+"-fipa-cp",
+"-fipa-sra", "-fipa-icf",
+"-fisolate-erroneous-paths-dereference",
+"-flra-remat", "-foptimize-sibling-calls",
+"-foptimize-strlen",
+"-fpartial-inlining", "-fpeephole2",
+"-freorder-blocks-and-partition", "-freorder-functions",
+"-frerun-cse-after-loop",
+"-fsched-interblock", "-fsched-spec",
+"-fschedule-insns", "-fschedule-insns2",
+"-fstrict-aliasing",
+"-ftree-builtin-call-dce",
+"-ftree-switch-conversion", "-ftree-tail-merge",
+"-ftree-pre",
+"-ftree-vrp", "-fipa-ra"]
+
+results:
+
+Generation:   Value:
+1  39.75854754447937
+3  39.02823352813721
+5  39.02823352813721
+7  39.02823352813721
+9  39.00987005233765
+11  38.95427680015564
+13  38.95427680015564
+15  38.95427680015564
+17  38.95427680015564
+19  38.76367545127869
+21  38.76367545127869
+23  38.76367545127869
+25  38.76367545127869
+27  38.76367545127869
+29  38.76367545127869
+31  38.76367545127869
+33  38.76367545127869
+35  38.76367545127869
+37  38.76367545127869
+39  38.76367545127869
+41  38.76367545127869
+43  38.76367545127869
+45  38.76367545127869
+47  38.76367545127869
+49  38.76367545127869
+Best individual:  ['-fbranch-count-reg', '-fcprop-registers', '-fdce', '-fdefer-pop', '-fdelayed-branch', '-fforward-propagate', '-fguess-branch-probability', '-fif-conversion2', '-fipa-pure-const', '-fipa-profile', '-fmerge-constants', '-fmove-loop-invariants', '-fomit-frame-pointer', '-freorder-blocks', '-fshrink-wrap', '-ftree-bit-ccp', '-ftree-ccp', '-ftree-ch', '-ftree-coalesce-vars', '-ftree-dominator-opts', '-ftree-fre', '-ftree-sink', '-ftree-slsr', '-ftree-pta', '-ftree-ter', '-fthread-jumps', '-falign-functions', '-falign-labels', '-fcse-follow-jumps', '-fcse-skip-blocks', '-fdelete-null-pointer-checks', '-fdevirtualize', '-fdevirtualize-speculatively', '-fgcse', '-fgcse-lm', '-findirect-inlining', '-fipa-cp', '-foptimize-sibling-calls', '-fpeephole2', '-freorder-functions', '-fsched-interblock', '-fsched-spec', '-fschedule-insns2', '-ftree-builtin-call-dce', '-ftree-switch-conversion', '-ftree-pre']
+
+source: sem flags
+results: 
+real	0m56.819s
+user	0m56.812s
+
+source: benchmark
+-pipe -O3 -fomit-frame-pointer -march=native -mfpmath=sse -msse3
+
+results: 
+real	0m5.327s
+user	0m5.324s
+sys	0m0.000s
