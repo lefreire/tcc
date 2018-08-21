@@ -180,3 +180,115 @@ results:
 real	0m5.327s
 user	0m5.324s
 sys	0m0.000s
+
+source: all flags
+["-faggressive-loop-optimizations", 
+"-falign-functions",
+"-falign-jumps",
+"-falign-labels",
+"-falign-loops",
+"-fauto-inc-dec",  "-fbranch-probabilities", 
+"-fbranch-target-load-optimize",  "-fbranch-target-load-optimize2", 
+"-fbtr-bb-exclusive",  "-fcaller-saves", 
+"-fcombine-stack-adjustments",  "-fconserve-stack", 
+"-fcompare-elim",  "-fcprop-registers",  "-fcrossjumping" ,
+"-fcse-follow-jumps",  "-fcse-skip-blocks",  "-fcx-fortran-rules", 
+"-fcx-limited-range", 
+"-fdata-sections",  "-fdce",  "-fdelayed-branch", 
+"-fdelete-null-pointer-checks",  "-fdevirtualize",  "-fdevirtualize-speculatively", 
+"-fdevirtualize-at-ltrans",  "-fdse", 
+"-fearly-inlining",  "-fipa-sra",  "-fexpensive-optimizations",  "-ffat-lto-objects", 
+"-ffast-math",  "-ffinite-math-only",  "-ffloat-store", 
+"-fforward-propagate",   "-ffunction-sections", 
+"-fgcse",  "-fgcse-after-reload",  "-fgcse-las",  "-fgcse-lm",  "-fgraphite-identity", 
+"-fgcse-sm",  "-fhoist-adjacent-loads",  "-fif-conversion", 
+"-fif-conversion2",  "-findirect-inlining", 
+"-finline-functions",  "-finline-functions-called-once",  
+"-finline-small-functions",  "-fipa-cp",  "-fipa-cp-clone", 
+"-fipa-pta",  "-fipa-profile",  "-fipa-pure-const",  "-fipa-reference",  "-fipa-icf", 
+"-fira-hoist-pressure", 
+"-fira-loop-pressure",  "-fno-ira-share-save-slots", 
+"-fno-ira-share-spill-slots", 
+"-fisolate-erroneous-paths-dereference",  "-fisolate-erroneous-paths-attribute", 
+"-fivopts",  "-fkeep-inline-functions",
+"-fkeep-static-consts",  "-flive-range-shrinkage", 
+"-floop-block",  "-floop-interchange",  "-floop-strip-mine", 
+"-floop-unroll-and-jam",  "-floop-nest-optimize", 
+"-floop-parallelize-all",  "-flra-remat",  "-flto", "-fmerge-all-constants", 
+"-fmerge-constants",  "-fmodulo-sched",  "-fmodulo-sched-allow-regmoves", 
+"-fmove-loop-invariants",  "-fno-branch-count-reg", 
+"-fno-defer-pop",  "-fno-function-cse", 
+"-fno-guess-branch-probability",  "-fno-inline",  "-fno-math-errno",  "-fno-peephole", 
+"-fno-peephole2",  "-fno-sched-interblock", 
+"-fno-sched-spec",  "-fno-signed-zeros", 
+"-fno-toplevel-reorder",  "-fno-trapping-math",  "-fno-zero-initialized-in-bss", 
+"-fomit-frame-pointer",  "-foptimize-sibling-calls", 
+"-fpartial-inlining",  "-fpeel-loops",  "-fpredictive-commoning", 
+"-fprofile-correction", 
+"-fprofile-use", "-fprofile-values", 
+"-fprofile-reorder-functions", 
+"-frename-registers",  "-freorder-blocks", 
+"-freorder-blocks-and-partition",  "-freorder-functions", 
+"-frerun-cse-after-loop",  "-freschedule-modulo-scheduled-loops", 
+"-frounding-math",  
+"-fsched2-use-superblocks",  "-fsched-pressure", 
+"-fsched-spec-load",  "-fsched-spec-load-dangerous", 
+"-fsched-stalled-insns-dep",  "-fsched-stalled-insns",
+"-fsched-group-heuristic",  "-fsched-critical-path-heuristic", 
+"-fsched-spec-insn-heuristic",  "-fsched-rank-heuristic", 
+"-fsched-last-insn-heuristic",  "-fsched-dep-count-heuristic", 
+"-fschedule-fusion", 
+"-fschedule-insns",  
+"-fselective-scheduling",  "-fselective-scheduling2", 
+"-fsel-sched-pipelining",  "-fsel-sched-pipelining-outer-loops", 
+"-fsemantic-interposition",  "-fshrink-wrap", 
+"-fsignaling-nans",
+"-fsingle-precision-constant",  "-fsplit-ivs-in-unroller",  
+"-fsplit-wide-types",  "-fssa-phiopt", 
+"-fstdarg-opt",   "-fstrict-aliasing", 
+"-fthread-jumps",  "-ftracer",  "-ftree-bit-ccp", 
+"-ftree-builtin-call-dce",  "-ftree-ccp",  "-ftree-ch", 
+"-ftree-coalesce-vars",  "-ftree-copy-prop",  "-ftree-dce",  "-ftree-dominator-opts", 
+"-ftree-dse",  "-ftree-forwprop",  "-ftree-fre",
+"-ftree-loop-if-convert",  "-ftree-loop-im", 
+"-ftree-phiprop",  "-ftree-loop-distribution",  "-ftree-loop-distribute-patterns" ,
+"-ftree-loop-ivcanon",  "-ftree-loop-linear",  "-ftree-loop-optimize", 
+"-ftree-loop-vectorize", "-ftree-pre",  "-ftree-partial-pre",  "-ftree-pta", 
+"-ftree-reassoc",   "-ftree-sink",   "-ftree-slsr",   "-ftree-sra", 
+"-ftree-switch-conversion",   "-ftree-tail-merge",  
+"-ftree-ter",   "-ftree-vectorize",   "-ftree-vrp", 
+"-funit-at-a-time",   "-funroll-all-loops",   "-funroll-loops",  
+"-funsafe-math-optimizations",   "-funswitch-loops",  
+"-fipa-ra",   "-fvariable-expansion-in-unroller",   "-fvect-cost-model",   "-fvpt",  
+"-fweb",   "-fwhole-program",  "-fuse-linker-plugin",  
+"-O",   "-O0",   "-O1",   "-O2",   "-O3",   "-Os",   "-Ofast",  "-Og"]
+
+Generation:   Value:
+1  4.8059937953948975
+3  4.8059937953948975
+5  4.512294054031372
+7  4.512294054031372
+9  4.434932231903076
+11  4.402050971984863
+13  4.351418495178223
+15  4.351418495178223
+17  4.348809480667114
+19  4.341358184814453
+21  4.341358184814453
+23  4.3372814655303955
+25  4.241605997085571
+27  4.241605997085571
+29  4.167682409286499
+31  4.167682409286499
+33  4.167682409286499
+35  4.167682409286499
+37  4.167682409286499
+39  4.167682409286499
+41  4.167682409286499
+43  4.167682409286499
+45  4.167682409286499
+47  4.167682409286499
+49  4.167682409286499
+
+Best individual:  ['-falign-functions', '-falign-jumps', '-falign-labels', '-fbranch-probabilities', '-fbranch-target-load-optimize', '-fbranch-target-load-optimize2', '-fcaller-saves', '-fcombine-stack-adjustments', '-fconserve-stack', '-fcompare-elim', '-fcprop-registers', '-fcse-follow-jumps', '-fcse-skip-blocks', '-fcx-fortran-rules', '-fdelayed-branch', '-fdelete-null-pointer-checks', '-fdevirtualize', '-fdevirtualize-speculatively', '-fdevirtualize-at-ltrans', '-fdse', '-fearly-inlining', '-fipa-sra', '-ffat-lto-objects', '-ffast-math', '-ffinite-math-only', '-fforward-propagate', '-ffunction-sections', '-fgcse', '-fgcse-after-reload', '-fgraphite-identity', '-fgcse-sm', '-fhoist-adjacent-loads', '-fif-conversion', '-fif-conversion2', '-findirect-inlining', '-finline-functions', '-finline-functions-called-once', '-fipa-cp', '-fipa-cp-clone', '-fipa-pta', '-fipa-profile', '-fipa-pure-const', '-fipa-reference', '-fira-hoist-pressure', '-fira-loop-pressure', '-fno-ira-share-save-slots', '-fisolate-erroneous-paths-dereference', '-fivopts', '-fkeep-inline-functions', '-flive-range-shrinkage', '-floop-block', '-floop-interchange', '-floop-strip-mine', '-floop-unroll-and-jam', '-floop-parallelize-all', '-flra-remat', '-flto', '-fmerge-all-constants', '-fmove-loop-invariants', '-fno-branch-count-reg', '-fno-defer-pop', '-fno-guess-branch-probability', '-fno-inline', '-fno-math-errno', '-fno-peephole', '-fno-peephole2', '-fno-sched-spec', '-fno-signed-zeros', '-fno-toplevel-reorder', '-fno-trapping-math', '-fno-zero-initialized-in-bss', '-fpartial-inlining', '-fpeel-loops', '-fpredictive-commoning', '-fprofile-correction', '-fprofile-use', '-fprofile-values', '-freorder-blocks', '-freorder-blocks-and-partition', '-frerun-cse-after-loop', '-freschedule-modulo-scheduled-loops', '-fsched2-use-superblocks', '-fsched-pressure', '-fsched-spec-load-dangerous', '-fsched-stalled-insns', '-fsched-group-heuristic', '-fsched-critical-path-heuristic', '-fsched-last-insn-heuristic', '-fsched-dep-count-heuristic', '-fschedule-fusion', '-fschedule-insns', '-fselective-scheduling', '-fselective-scheduling2', '-fsel-sched-pipelining', '-fsel-sched-pipelining-outer-loops', '-fsemantic-interposition', '-fshrink-wrap', '-fsingle-precision-constant', '-fsplit-ivs-in-unroller', '-fsplit-wide-types', '-fssa-phiopt', '-fstdarg-opt', '-fstrict-aliasing', '-fthread-jumps', '-ftree-ch', '-ftree-copy-prop', '-ftree-dce', '-ftree-dominator-opts', '-ftree-dse', '-ftree-fre', '-ftree-loop-if-convert', '-ftree-loop-im', '-ftree-phiprop', '-ftree-loop-distribution', '-ftree-loop-distribute-patterns', '-ftree-loop-ivcanon', '-ftree-loop-linear', '-ftree-loop-optimize', '-ftree-loop-vectorize', '-ftree-partial-pre', '-ftree-pta', '-ftree-sink', '-ftree-slsr', '-ftree-sra', '-ftree-tail-merge', '-ftree-vectorize', '-ftree-vrp', '-funit-at-a-time', '-funroll-loops', '-funsafe-math-optimizations', '-fipa-ra', '-fvariable-expansion-in-unroller', '-fvect-cost-model', '-fvpt', '-fwhole-program', '-fuse-linker-plugin', '-O', '-O0', '-O1', '-O2']
+
