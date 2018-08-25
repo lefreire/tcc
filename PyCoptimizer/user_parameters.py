@@ -51,6 +51,8 @@ class UserParameters(object):
                 -crossover_rate: crossover rate; must be between 0 
                 and 1
                 -mutation_rate: mutation rate; must be between 0 and 1
+        static_flags: string
+            String containing flags that will be used in every compilation.    
         """
         self.flags_list = ["-O1", "-O2", "-O3"]
         self.compile_path = getcwd()
@@ -65,6 +67,7 @@ class UserParameters(object):
                                   "individual_size": 3,
                                   "crossover_rate": 0.3,
                                   "mutation_rate": 0.1}
+        self.static_flags = ""
         return
 
     @abstractmethod

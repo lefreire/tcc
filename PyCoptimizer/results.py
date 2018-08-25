@@ -40,6 +40,7 @@ class Results(object):
         for res in range(len(list_generations)):
             print('{} {:^20}'.format(list_generations[res], list_values[res]))
         print("Best individual: ", self.best_ind)
+        print("Static flags: ", self.user_class.static_flags)
 
     def graphic(self, list_generations, list_values):
         """ Method to draw in a graphic the main results
@@ -54,6 +55,7 @@ class Results(object):
                   bbox={'facecolor': '0.8', 'pad': 5})
         plt.savefig("{}island_{}.png".format(self.path, str(self.no_pop)))
         print("Best individual: ", self.best_ind)
+        print("Static flags: ", self.user_class.static_flags)
 
     def get_results(self, list_generations, list_values, best_ind):
         """ Method to choose how the user wants to see their results

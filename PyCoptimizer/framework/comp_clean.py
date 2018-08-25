@@ -24,6 +24,7 @@ class CompClean(object):
         for ind in range(0, len(individual)):
             if individual[ind] > 0.5:
                 individual_def = individual_def + " " + options[ind]
+        individual_def = individual_def + " " + self.user_class.static_flags
         individual_def = '"' + individual_def + '"'
         return individual_def
 
@@ -37,6 +38,8 @@ class CompClean(object):
         individual = self.__change_flags(individual, flags)
         compile_command = "{}={} {}".format(
             self.user_class.macro, individual, compile_command)
+
+        print("COMANDO PARA COMPILAR: ", compile_command)
 
         path = getcwd()
         chdir(compile_path)
