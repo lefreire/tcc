@@ -59,12 +59,11 @@ class COptimizer(object):
             List containing the actived flags in the population
         """
         options = self.get_flags()
-        no_ind = self.user_class.dict_optimization["individual_size"]
         no_pop = self.user_class.dict_optimization["no_pop"]
         individuals = []
         for ind in range(0, no_pop):
             individual_first = []
-            for individual in range(0, no_ind):
+            for individual in range(0, len(options)):
                 individual_first.append(random.randint(0, 1))
             individuals.append(individual_first)
         return individuals
@@ -78,7 +77,3 @@ class COptimizer(object):
 
     def main(self):
         self.run_optimization()
-
-
-# if __name__ == "__main__":
-#     COptimizer().run_optimization()
