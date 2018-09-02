@@ -4,7 +4,6 @@ from inspect import getmembers, isclass
 import random
 import sys
 import os
-sys.path.insert(0, '/usr/local/lib/python2.7/site-packages')
 from PyCoptimizer.framework.island import main
 from PyCoptimizer.results import Results
 
