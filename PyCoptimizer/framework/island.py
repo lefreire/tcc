@@ -37,7 +37,7 @@ class Island(object):
             Population defined by pygmo
         """
         self.user_class = user_class
-        self.dim = self.user_class.dict_optimization['individual_size']
+        self.dim = len(self.user_class.flags_list)
         self.compClean = CompClean(self.user_class)
         self.no_pop = 0
         self.no_generations = 0
