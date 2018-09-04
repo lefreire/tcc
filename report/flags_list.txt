@@ -1,3 +1,5 @@
+TESTES DO ARQUIVO TEST.PY
+
 source: "Automatic Selection of Compiler Options using Non-Parametric Inferential Statistics"
 ["-fomit-frame-pointer",
 "-fsched-interblock",
@@ -292,3 +294,36 @@ Generation:   Value:
 
 Best individual:  ['-falign-functions', '-falign-jumps', '-falign-labels', '-fbranch-probabilities', '-fbranch-target-load-optimize', '-fbranch-target-load-optimize2', '-fcaller-saves', '-fcombine-stack-adjustments', '-fconserve-stack', '-fcompare-elim', '-fcprop-registers', '-fcse-follow-jumps', '-fcse-skip-blocks', '-fcx-fortran-rules', '-fdelayed-branch', '-fdelete-null-pointer-checks', '-fdevirtualize', '-fdevirtualize-speculatively', '-fdevirtualize-at-ltrans', '-fdse', '-fearly-inlining', '-fipa-sra', '-ffat-lto-objects', '-ffast-math', '-ffinite-math-only', '-fforward-propagate', '-ffunction-sections', '-fgcse', '-fgcse-after-reload', '-fgraphite-identity', '-fgcse-sm', '-fhoist-adjacent-loads', '-fif-conversion', '-fif-conversion2', '-findirect-inlining', '-finline-functions', '-finline-functions-called-once', '-fipa-cp', '-fipa-cp-clone', '-fipa-pta', '-fipa-profile', '-fipa-pure-const', '-fipa-reference', '-fira-hoist-pressure', '-fira-loop-pressure', '-fno-ira-share-save-slots', '-fisolate-erroneous-paths-dereference', '-fivopts', '-fkeep-inline-functions', '-flive-range-shrinkage', '-floop-block', '-floop-interchange', '-floop-strip-mine', '-floop-unroll-and-jam', '-floop-parallelize-all', '-flra-remat', '-flto', '-fmerge-all-constants', '-fmove-loop-invariants', '-fno-branch-count-reg', '-fno-defer-pop', '-fno-guess-branch-probability', '-fno-inline', '-fno-math-errno', '-fno-peephole', '-fno-peephole2', '-fno-sched-spec', '-fno-signed-zeros', '-fno-toplevel-reorder', '-fno-trapping-math', '-fno-zero-initialized-in-bss', '-fpartial-inlining', '-fpeel-loops', '-fpredictive-commoning', '-fprofile-correction', '-fprofile-use', '-fprofile-values', '-freorder-blocks', '-freorder-blocks-and-partition', '-frerun-cse-after-loop', '-freschedule-modulo-scheduled-loops', '-fsched2-use-superblocks', '-fsched-pressure', '-fsched-spec-load-dangerous', '-fsched-stalled-insns', '-fsched-group-heuristic', '-fsched-critical-path-heuristic', '-fsched-last-insn-heuristic', '-fsched-dep-count-heuristic', '-fschedule-fusion', '-fschedule-insns', '-fselective-scheduling', '-fselective-scheduling2', '-fsel-sched-pipelining', '-fsel-sched-pipelining-outer-loops', '-fsemantic-interposition', '-fshrink-wrap', '-fsingle-precision-constant', '-fsplit-ivs-in-unroller', '-fsplit-wide-types', '-fssa-phiopt', '-fstdarg-opt', '-fstrict-aliasing', '-fthread-jumps', '-ftree-ch', '-ftree-copy-prop', '-ftree-dce', '-ftree-dominator-opts', '-ftree-dse', '-ftree-fre', '-ftree-loop-if-convert', '-ftree-loop-im', '-ftree-phiprop', '-ftree-loop-distribution', '-ftree-loop-distribute-patterns', '-ftree-loop-ivcanon', '-ftree-loop-linear', '-ftree-loop-optimize', '-ftree-loop-vectorize', '-ftree-partial-pre', '-ftree-pta', '-ftree-sink', '-ftree-slsr', '-ftree-sra', '-ftree-tail-merge', '-ftree-vectorize', '-ftree-vrp', '-funit-at-a-time', '-funroll-loops', '-funsafe-math-optimizations', '-fipa-ra', '-fvariable-expansion-in-unroller', '-fvect-cost-model', '-fvpt', '-fwhole-program', '-fuse-linker-plugin', '-O', '-O0', '-O1', '-O2']
 
+with static flags:
+Results:
+
+Generation:   Value:   
+1  4.621499300003052  
+3  4.398962020874023  
+5  4.382596492767334  
+7  4.195285320281982  
+9  4.195285320281982  
+11  4.195285320281982  
+13  4.113243103027344  
+15  4.113243103027344  
+17  4.0920233726501465 
+19  4.0920233726501465 
+21  4.0920233726501465 
+23  4.0920233726501465 
+25  4.0920233726501465 
+27  4.0920233726501465 
+29  4.0920233726501465 
+31  4.089470148086548  
+33  4.089470148086548  
+35  4.089470148086548  
+37   4.08756947517395  
+39   4.08756947517395  
+41   4.08756947517395  
+43   4.08756947517395  
+45   4.08756947517395  
+47   4.08756947517395  
+49  4.071790933609009  
+Best individual:  ['-faggressive-loop-optimizations', '-falign-jumps', '-falign-loops', '-fauto-inc-dec', '-fbranch-target-load-optimize2', '-fcaller-saves', '-fcombine-stack-adjustments', '-fcprop-registers', '-fcse-follow-jumps', '-fcx-fortran-rules', '-fcx-limited-range', '-fdata-sections', '-fdce', '-fdelete-null-pointer-checks', '-fdevirtualize-speculatively', '-fdevirtualize-at-ltrans', '-fdse', '-fipa-sra', '-fexpensive-optimizations', '-ffast-math', '-ffinite-math-only', '-fforward-propagate', '-ffunction-sections', '-fgcse-after-reload', '-fgraphite-identity', '-fgcse-sm', '-fhoist-adjacent-loads', '-fif-conversion2', '-findirect-inlining', '-finline-functions', '-finline-small-functions', '-fipa-cp', '-fipa-cp-clone', '-fipa-pta', '-fipa-icf', '-fira-hoist-pressure', '-fira-loop-pressure', '-fno-ira-share-save-slots', '-fno-ira-share-spill-slots', '-fisolate-erroneous-paths-dereference', '-fisolate-erroneous-paths-attribute', '-fkeep-inline-functions', '-flive-range-shrinkage', '-floop-block', '-floop-interchange', '-floop-unroll-and-jam', '-floop-parallelize-all', '-flra-remat', '-flto', '-fmerge-all-constants', '-fmerge-constants', '-fmodulo-sched', '-fmodulo-sched-allow-regmoves', '-fmove-loop-invariants', '-fno-branch-count-reg', '-fno-defer-pop', '-fno-guess-branch-probability', '-fno-peephole', '-fno-peephole2', '-fno-sched-spec', '-fno-toplevel-reorder', '-fomit-frame-pointer', '-foptimize-sibling-calls', '-fpartial-inlining', '-fpeel-loops', '-fprofile-correction', '-fprofile-use', '-fprofile-values', '-frename-registers', '-freorder-blocks', '-freorder-functions', '-frerun-cse-after-loop', '-freschedule-modulo-scheduled-loops', '-frounding-math', '-fsched2-use-superblocks', '-fsched-spec-load-dangerous', '-fsched-stalled-insns-dep', '-fsched-group-heuristic', '-fsched-critical-path-heuristic', '-fsched-last-insn-heuristic', '-fsched-dep-count-heuristic', '-fschedule-fusion', '-fschedule-insns', '-fsemantic-interposition', '-fshrink-wrap', '-fsingle-precision-constant', '-fsplit-ivs-in-unroller', '-fstrict-aliasing', '-fthread-jumps', '-ftracer', '-ftree-bit-ccp', '-ftree-builtin-call-dce', '-ftree-ch', '-ftree-coalesce-vars', '-ftree-dominator-opts', '-ftree-forwprop', '-ftree-loop-if-convert', '-ftree-phiprop', '-ftree-loop-distribute-patterns', '-ftree-loop-ivcanon', '-ftree-partial-pre', '-ftree-pta', '-ftree-slsr', '-ftree-sra', '-ftree-tail-merge', '-ftree-ter', '-ftree-vectorize', '-funroll-all-loops', '-funroll-loops', '-funsafe-math-optimizations', '-fipa-ra', '-fvect-cost-model', '-fvpt', '-fweb', '-fwhole-program', '-O', '-O1', '-O3', '-Os', '-Og']
+Static flags:  -march=native -mfpmath=sse -msse3
+
+TESTES DO ARQUIVO Fannkuchredux.PY
