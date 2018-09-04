@@ -1,0 +1,349 @@
+PRIMEIRA POP:  Problem name: <class 'PyCoptimizer.framework.island.Island'>
+	Global dimension:			191
+	Integer dimension:			0
+	Fitness dimension:			1
+	Number of objectives:			1
+	Equality constraints dimension:		0
+	Inequality constraints dimension:	0
+	Lower bounds: [0, 0, 0, 0, 0, ... ]
+	Upper bounds: [1, 1, 1, 1, 1, ... ]
+
+	Has gradient: false
+	User implemented gradient sparsity: false
+	Has hessians: false
+	User implemented hessians sparsity: false
+
+	Fitness evaluations: 30
+
+	Thread safety: none
+
+Population size: 30
+
+List of individuals: 
+#0:
+	ID:			1400506353286354685
+	Decision vector:	[1, 0, 1, 0, 0, ... ]
+	Fitness vector:		[59.419]
+#1:
+	ID:			1722261538945122843
+	Decision vector:	[1, 1, 1, 1, 1, ... ]
+	Fitness vector:		[58.86]
+#2:
+	ID:			6327534774750694892
+	Decision vector:	[0, 0, 0, 0, 1, ... ]
+	Fitness vector:		[59.3157]
+#3:
+	ID:			3856895748328481663
+	Decision vector:	[1, 0, 0, 0, 0, ... ]
+	Fitness vector:		[59.3678]
+#4:
+	ID:			4303256582505222513
+	Decision vector:	[0, 1, 0, 1, 0, ... ]
+	Fitness vector:		[58.9633]
+#5:
+	ID:			15359170925609555811
+	Decision vector:	[1, 0, 0, 1, 0, ... ]
+	Fitness vector:		[59.1474]
+#6:
+	ID:			9755204577715788825
+	Decision vector:	[1, 1, 0, 0, 0, ... ]
+	Fitness vector:		[59.2143]
+#7:
+	ID:			6761318493342235341
+	Decision vector:	[0, 0, 0, 1, 1, ... ]
+	Fitness vector:		[59.0344]
+#8:
+	ID:			14546041062991898939
+	Decision vector:	[1, 0, 0, 0, 1, ... ]
+	Fitness vector:		[59.3164]
+#9:
+	ID:			17124459697907217134
+	Decision vector:	[1, 0, 1, 0, 0, ... ]
+	Fitness vector:		[58.7029]
+#10:
+	ID:			4067241110279892034
+	Decision vector:	[1, 1, 1, 1, 0, ... ]
+	Fitness vector:		[59.0435]
+#11:
+	ID:			17097394744766295706
+	Decision vector:	[1, 1, 1, 0, 1, ... ]
+	Fitness vector:		[59.259]
+#12:
+	ID:			13291573780269821575
+	Decision vector:	[1, 1, 0, 1, 1, ... ]
+	Fitness vector:		[58.8288]
+#13:
+	ID:			12190805443019867161
+	Decision vector:	[0, 1, 1, 1, 0, ... ]
+	Fitness vector:		[58.8039]
+#14:
+	ID:			10014244521213190127
+	Decision vector:	[1, 1, 1, 0, 1, ... ]
+	Fitness vector:		[58.4895]
+#15:
+	ID:			1398815250207483269
+	Decision vector:	[1, 0, 0, 0, 1, ... ]
+	Fitness vector:		[58.8273]
+#16:
+	ID:			13917517277331434883
+	Decision vector:	[1, 0, 0, 0, 0, ... ]
+	Fitness vector:		[59.1868]
+#17:
+	ID:			2566277727234326929
+	Decision vector:	[1, 1, 0, 0, 1, ... ]
+	Fitness vector:		[58.941]
+#18:
+	ID:			1536348217572945843
+	Decision vector:	[0, 0, 1, 0, 1, ... ]
+	Fitness vector:		[59.829]
+#19:
+	ID:			11029310955366516022
+	Decision vector:	[0, 0, 1, 0, 1, ... ]
+	Fitness vector:		[58.7477]
+#20:
+	ID:			2826758959092905827
+	Decision vector:	[0, 0, 1, 0, 1, ... ]
+	Fitness vector:		[59.5105]
+#21:
+	ID:			11718954073058934242
+	Decision vector:	[1, 0, 1, 1, 0, ... ]
+	Fitness vector:		[59.2667]
+#22:
+	ID:			16927800316483239912
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[59.0356]
+#23:
+	ID:			2598299174143478941
+	Decision vector:	[0, 0, 0, 0, 0, ... ]
+	Fitness vector:		[59.6119]
+#24:
+	ID:			16263633158887668798
+	Decision vector:	[1, 0, 0, 0, 1, ... ]
+	Fitness vector:		[59.2269]
+#25:
+	ID:			11516784350715812270
+	Decision vector:	[0, 1, 1, 1, 1, ... ]
+	Fitness vector:		[59.16]
+#26:
+	ID:			2003871710842563727
+	Decision vector:	[0, 0, 0, 0, 0, ... ]
+	Fitness vector:		[59.4937]
+#27:
+	ID:			3925463934226924082
+	Decision vector:	[0, 1, 1, 1, 0, ... ]
+	Fitness vector:		[58.6961]
+#28:
+	ID:			8733296857546109461
+	Decision vector:	[1, 0, 1, 0, 0, ... ]
+	Fitness vector:		[59.3557]
+#29:
+	ID:			11500930693987662356
+	Decision vector:	[1, 1, 0, 1, 0, ... ]
+	Fitness vector:		[59.0035]
+
+Champion decision vector: [1, 1, 1, 0, 1, ... ]
+Champion fitness: [58.4895]
+
+ULTIMA POP:  Problem name: <class 'PyCoptimizer.framework.island.Island'>
+	Global dimension:			191
+	Integer dimension:			0
+	Fitness dimension:			1
+	Number of objectives:			1
+	Equality constraints dimension:		0
+	Inequality constraints dimension:	0
+	Lower bounds: [0, 0, 0, 0, 0, ... ]
+	Upper bounds: [1, 1, 1, 1, 1, ... ]
+
+	Has gradient: false
+	User implemented gradient sparsity: false
+	Has hessians: false
+	User implemented hessians sparsity: false
+
+	Fitness evaluations: 1530
+
+	Thread safety: none
+
+Population size: 30
+
+List of individuals: 
+#0:
+	ID:			1400506353286354685
+	Decision vector:	[1, 1, 1, 0.848224, 1, ... ]
+	Fitness vector:		[56.0433]
+#1:
+	ID:			1722261538945122843
+	Decision vector:	[0.378981, 1, 0, 1, 0, ... ]
+	Fitness vector:		[56.0678]
+#2:
+	ID:			6327534774750694892
+	Decision vector:	[0, 1, 0.425447, 1, 0.285111, ... ]
+	Fitness vector:		[56.0978]
+#3:
+	ID:			3856895748328481663
+	Decision vector:	[0, 1, 1, 1, 0.377784, ... ]
+	Fitness vector:		[56.1722]
+#4:
+	ID:			4303256582505222513
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.1897]
+#5:
+	ID:			15359170925609555811
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.2149]
+#6:
+	ID:			9755204577715788825
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.2334]
+#7:
+	ID:			6761318493342235341
+	Decision vector:	[0.866604, 0, 0.797408, 0, 1, ... ]
+	Fitness vector:		[56.2391]
+#8:
+	ID:			14546041062991898939
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.2425]
+#9:
+	ID:			17124459697907217134
+	Decision vector:	[1, 1, 1, 0.848224, 1, ... ]
+	Fitness vector:		[56.2653]
+#10:
+	ID:			4067241110279892034
+	Decision vector:	[0, 0.481486, 1, 0.00152708, 1, ... ]
+	Fitness vector:		[56.2967]
+#11:
+	ID:			17097394744766295706
+	Decision vector:	[0, 0.481486, 1, 0.00152708, 0.731315, ... ]
+	Fitness vector:		[56.3026]
+#12:
+	ID:			13291573780269821575
+	Decision vector:	[1, 1, 0, 1, 0, ... ]
+	Fitness vector:		[56.3065]
+#13:
+	ID:			12190805443019867161
+	Decision vector:	[1, 1, 0, 1, 0, ... ]
+	Fitness vector:		[56.3152]
+#14:
+	ID:			10014244521213190127
+	Decision vector:	[1, 1, 0.425447, 1, 0.285111, ... ]
+	Fitness vector:		[56.3488]
+#15:
+	ID:			1398815250207483269
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.3695]
+#16:
+	ID:			13917517277331434883
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.3772]
+#17:
+	ID:			2566277727234326929
+	Decision vector:	[1, 1, 1, 0.848224, 1, ... ]
+	Fitness vector:		[56.3893]
+#18:
+	ID:			1536348217572945843
+	Decision vector:	[1, 1, 1, 1, 1, ... ]
+	Fitness vector:		[56.395]
+#19:
+	ID:			11029310955366516022
+	Decision vector:	[0, 1, 1, 1, 0.377784, ... ]
+	Fitness vector:		[56.396]
+#20:
+	ID:			2826758959092905827
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.3998]
+#21:
+	ID:			11718954073058934242
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.4067]
+#22:
+	ID:			16927800316483239912
+	Decision vector:	[1, 1, 1, 1, 0.993119, ... ]
+	Fitness vector:		[56.415]
+#23:
+	ID:			2598299174143478941
+	Decision vector:	[0.576576, 1, 0, 1, 0, ... ]
+	Fitness vector:		[56.4195]
+#24:
+	ID:			16263633158887668798
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.4323]
+#25:
+	ID:			11516784350715812270
+	Decision vector:	[1, 1, 1, 1, 0.99035, ... ]
+	Fitness vector:		[56.4439]
+#26:
+	ID:			2003871710842563727
+	Decision vector:	[1, 1, 0, 0.853889, 0, ... ]
+	Fitness vector:		[56.4461]
+#27:
+	ID:			3925463934226924082
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.4555]
+#28:
+	ID:			8733296857546109461
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.4659]
+#29:
+	ID:			11500930693987662356
+	Decision vector:	[0, 0.481486, 1, 0, 1, ... ]
+	Fitness vector:		[56.4691]
+
+Champion decision vector: [1, 1, 1, 0.848224, 1, ... ]
+Champion fitness: [56.0433]
+
+Results:
+
+Generation:   Value:   
+1   58.4895453453064  
+3  57.94516372680664  
+5  56.55404567718506  
+7  56.55404567718506  
+9  56.544222354888916 
+11  56.544222354888916 
+13  56.544222354888916 
+15  56.39504027366638  
+17  56.39504027366638  
+19  56.39504027366638  
+21  56.39504027366638  
+23  56.39504027366638  
+25  56.39504027366638  
+27  56.39504027366638  
+29  56.39504027366638  
+31   56.2391197681427  
+33   56.2391197681427  
+35   56.2391197681427  
+37  56.04327630996704  
+39  56.04327630996704  
+41  56.04327630996704  
+43  56.04327630996704  
+45  56.04327630996704  
+47  56.04327630996704  
+49  56.04327630996704  
+Best individual:  ['-faggressive-loop-optimizations', '-falign-functions', '-falign-jumps']
+Static flags:  -march=native -mfpmath=sse -msse3
+
+   Gen:        Fevals:          Best:   Improvement:
+      1             30        58.4895       0.544382
+      3             90        57.9452      -0.418294
+      5            150         56.554     -0.0436676
+      7            210         56.554     0.00982332
+      9            270        56.5442      -0.382316
+     11            330        56.5442      -0.175688
+     13            390        56.5442       0.149182
+     15            450         56.395      -0.471312
+     17            510         56.395      -0.718391
+     19            570         56.395      -0.193232
+     21            630         56.395      -0.314455
+     23            690         56.395      -0.144401
+     25            750         56.395      -0.430676
+     27            810         56.395      -0.115511
+     29            870         56.395       0.155921
+     31            930        56.2391      -0.216345
+     33            990        56.2391       -0.83804
+     35           1050        56.2391       0.195843
+     37           1110        56.0433      -0.548764
+     39           1170        56.0433      -0.856084
+     41           1230        56.0433      -0.171588
+     43           1290        56.0433      -0.128914
+     45           1350        56.0433     -0.0545537
+     47           1410        56.0433      -0.190097
+     49           1470        56.0433      -0.346047
