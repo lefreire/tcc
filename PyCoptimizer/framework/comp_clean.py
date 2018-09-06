@@ -21,13 +21,9 @@ class CompClean(object):
             used in the compilation.
         """
         individual_def = ""
-        individual_sum = 0
         for ind in range(0, len(individual)):
             if individual[ind] > 0.5:
                 individual_def = individual_def + " " + options[ind]
-                individual_sum += 1
-                if individual_sum == no_individuals:
-                    break
         individual_def = individual_def + " " + self.user_class.static_flags
         individual_def = '"' + individual_def + '"'
         return individual_def
@@ -44,8 +40,10 @@ class CompClean(object):
         compile_command = "{}={} {}".format(
             self.user_class.macro, individual, compile_command)
 
+        print("COMPILAR: ", compile_command)
         path = getcwd()
         chdir(compile_path)
+
 
         my_env = environ.copy()
         my_env["PATH"] = "/usr/sbin:/sbin:{}".format(my_env["PATH"])

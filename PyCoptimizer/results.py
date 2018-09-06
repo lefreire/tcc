@@ -20,7 +20,6 @@ class Results(object):
         """
         self.user_class = user_class
         self.no_pop = user_class.dict_optimization['no_pop']
-        self.no_individual = user_class.dict_optimization["individual_size"]
         self.path = path
         self.result_type = result_type
         self.best_ind = []
@@ -29,12 +28,9 @@ class Results(object):
     def translate_individual(self):
         if len(self.best_ind_bin):
             list_ind = zip(self.best_ind_bin, self.user_class.flags_list)
-            individual_sum = 0
             for individual in list_ind:
                 if individual[0]:
                     self.best_ind.append(individual[1])
-                    individual_sum += 1
-                    if individual_sum == self.no_individual: break
 
     def log(self, list_generations, list_values):
         """ Method to print in the screen the main results
