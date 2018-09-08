@@ -60,10 +60,14 @@ class COptimizer(object):
         options = self.get_flags()
         no_pop = self.user_class.dict_optimization["no_pop"]
         individuals = []
+        benchmark_flags = ["-pipe", "-O3", "-fomit-frame-pointer"]
         for ind in range(0, no_pop):
             individual_first = []
             for individual in range(0, len(options)):
-                individual_first.append(random.randint(0, 1))
+                if options[individual] in benchmark_flags:
+                    individual_first.append(1)
+                else:
+                    individual_first.append(random.randint(0, 1))
             individuals.append(individual_first)
         return individuals
 
