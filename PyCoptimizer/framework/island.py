@@ -125,12 +125,10 @@ class Island(object):
                              m=self.mutation_rate,
                              selection="tournament"))
 
-        print("PRIMEIRA POP: ", self.pop)
 
         algo.set_verbosity(2)
         self.pop = algo.evolve(self.pop)
         logs = algo.extract(sga).get_log()
-        print("ULTIMA POP: ", self.pop)
         return ([gen[0] for gen in logs], [val[2] for val in logs],
                 self.pop.champion_x)
 
