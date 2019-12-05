@@ -1,6 +1,3 @@
-![]
-(logo_final.png)
-
 # PyCoptimizer
 
 This framework is made to offer, to the user, simplicity to choose what flags can be used for optimization in compilation time. It provides to you a list with compilation flags that can be used in compilation to find your goal: maximize ou minimize some of your numbers, like throughput or execution time. The idea started in a project on CERN, where I ran a genetic algorithm with a list of compilation flags to select the flags that improve the target code  throughput.
