@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='PyCoptimizer',
-    version='0.1',
+    version='0.1.1',
     description='Python Code Optimization using compilation flags',
     long_description=long_description,
     long_description_content_type="text/markdown",

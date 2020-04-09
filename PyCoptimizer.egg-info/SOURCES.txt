@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+PyCoptimizer/__init__.py
+PyCoptimizer/coptimizer.py
+PyCoptimizer/results.py
+PyCoptimizer/user_parameters.py
+PyCoptimizer.egg-info/PKG-INFO
+PyCoptimizer.egg-info/SOURCES.txt
+PyCoptimizer.egg-info/dependency_links.txt
+PyCoptimizer.egg-info/requires.txt
+PyCoptimizer.egg-info/top_level.txt
+PyCoptimizer/framework/__init__.py
+PyCoptimizer/framework/comp_clean.py
+PyCoptimizer/framework/island.py

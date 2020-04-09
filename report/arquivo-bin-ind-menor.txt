@@ -1,0 +1,509 @@
+PRIMEIRA POP:  Problem name: <class 'PyCoptimizer.framework.island.Island'>
+	Global dimension:			190
+	Integer dimension:			0
+	Fitness dimension:			1
+	Number of objectives:			1
+	Equality constraints dimension:		0
+	Inequality constraints dimension:	0
+	Lower bounds: [0, 0, 0, 0, 0, ... ]
+	Upper bounds: [1, 1, 1, 1, 1, ... ]
+
+	Has gradient: false
+	User implemented gradient sparsity: false
+	Has hessians: false
+	User implemented hessians sparsity: false
+
+	Fitness evaluations: 50
+
+	Thread safety: none
+
+Population size: 50
+
+List of individuals: 
+#0:
+	ID:			4518404425282667900
+	Decision vector:	[1, 1, 0, 0, 1, ... ]
+	Fitness vector:		[27.8978]
+#1:
+	ID:			12214507444733061401
+	Decision vector:	[0, 1, 0, 0, 1, ... ]
+	Fitness vector:		[25.9092]
+#2:
+	ID:			3290863753557243987
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[26.4257]
+#3:
+	ID:			14565057825322300529
+	Decision vector:	[0, 1, 1, 1, 0, ... ]
+	Fitness vector:		[27.2677]
+#4:
+	ID:			15145138679505510816
+	Decision vector:	[0, 0, 1, 0, 0, ... ]
+	Fitness vector:		[27.0445]
+#5:
+	ID:			16292026748163146742
+	Decision vector:	[1, 1, 0, 1, 0, ... ]
+	Fitness vector:		[26.7371]
+#6:
+	ID:			6499575489458173204
+	Decision vector:	[0, 0, 0, 0, 0, ... ]
+	Fitness vector:		[26.8106]
+#7:
+	ID:			13414005207163742946
+	Decision vector:	[1, 0, 1, 1, 1, ... ]
+	Fitness vector:		[25.6611]
+#8:
+	ID:			9159437746565963434
+	Decision vector:	[0, 0, 0, 0, 0, ... ]
+	Fitness vector:		[26.7248]
+#9:
+	ID:			10880344207866600185
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[26.5609]
+#10:
+	ID:			2529955740423507186
+	Decision vector:	[0, 0, 1, 1, 1, ... ]
+	Fitness vector:		[27.3228]
+#11:
+	ID:			16662840088853098600
+	Decision vector:	[0, 1, 1, 0, 0, ... ]
+	Fitness vector:		[27.292]
+#12:
+	ID:			7439375286882963424
+	Decision vector:	[0, 0, 1, 0, 1, ... ]
+	Fitness vector:		[25.16]
+#13:
+	ID:			5616187217939838496
+	Decision vector:	[0, 1, 1, 0, 0, ... ]
+	Fitness vector:		[26.7695]
+#14:
+	ID:			6554535410386934708
+	Decision vector:	[1, 1, 1, 1, 0, ... ]
+	Fitness vector:		[28.1181]
+#15:
+	ID:			158563695810676823
+	Decision vector:	[1, 1, 0, 1, 1, ... ]
+	Fitness vector:		[28.2865]
+#16:
+	ID:			12513980862128689897
+	Decision vector:	[0, 0, 1, 0, 0, ... ]
+	Fitness vector:		[25.8976]
+#17:
+	ID:			11768814862240496272
+	Decision vector:	[1, 1, 1, 1, 0, ... ]
+	Fitness vector:		[25.2223]
+#18:
+	ID:			9764630861779659262
+	Decision vector:	[1, 0, 0, 0, 1, ... ]
+	Fitness vector:		[28.2562]
+#19:
+	ID:			884537541026250011
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[25.6631]
+#20:
+	ID:			4701634843569214203
+	Decision vector:	[0, 0, 1, 1, 1, ... ]
+	Fitness vector:		[25.8839]
+#21:
+	ID:			2173217607691696941
+	Decision vector:	[1, 1, 1, 1, 0, ... ]
+	Fitness vector:		[28.539]
+#22:
+	ID:			3769742442225457403
+	Decision vector:	[0, 1, 0, 0, 0, ... ]
+	Fitness vector:		[26.6774]
+#23:
+	ID:			4050098792768102227
+	Decision vector:	[1, 0, 1, 1, 0, ... ]
+	Fitness vector:		[25.9308]
+#24:
+	ID:			8208432029302917030
+	Decision vector:	[0, 0, 1, 1, 1, ... ]
+	Fitness vector:		[27.6597]
+#25:
+	ID:			7608700957482570824
+	Decision vector:	[0, 0, 1, 1, 0, ... ]
+	Fitness vector:		[27.5244]
+#26:
+	ID:			10653096574527727881
+	Decision vector:	[1, 1, 1, 1, 1, ... ]
+	Fitness vector:		[26.161]
+#27:
+	ID:			13409199947691223968
+	Decision vector:	[0, 1, 1, 0, 0, ... ]
+	Fitness vector:		[25.7636]
+#28:
+	ID:			3095808627691089466
+	Decision vector:	[0, 1, 1, 0, 0, ... ]
+	Fitness vector:		[27.7002]
+#29:
+	ID:			16397059632737712536
+	Decision vector:	[1, 0, 1, 1, 0, ... ]
+	Fitness vector:		[26.2211]
+#30:
+	ID:			15122927190154575044
+	Decision vector:	[0, 0, 1, 1, 1, ... ]
+	Fitness vector:		[26.2255]
+#31:
+	ID:			6203890141075628222
+	Decision vector:	[0, 1, 1, 1, 1, ... ]
+	Fitness vector:		[27.6281]
+#32:
+	ID:			14155096468128922218
+	Decision vector:	[0, 1, 1, 1, 0, ... ]
+	Fitness vector:		[26.0952]
+#33:
+	ID:			18378939579205492034
+	Decision vector:	[1, 0, 1, 1, 0, ... ]
+	Fitness vector:		[27.7909]
+#34:
+	ID:			15847278497191575146
+	Decision vector:	[0, 1, 0, 0, 0, ... ]
+	Fitness vector:		[28.3175]
+#35:
+	ID:			5604912888757250604
+	Decision vector:	[0, 0, 1, 0, 0, ... ]
+	Fitness vector:		[26.1142]
+#36:
+	ID:			15994206924803042220
+	Decision vector:	[0, 1, 0, 1, 0, ... ]
+	Fitness vector:		[26.3571]
+#37:
+	ID:			8118201513883430814
+	Decision vector:	[1, 1, 0, 1, 0, ... ]
+	Fitness vector:		[26.0145]
+#38:
+	ID:			6374446734833622359
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[26.17]
+#39:
+	ID:			1944651953136811524
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[26.2809]
+#40:
+	ID:			2130214332614055767
+	Decision vector:	[0, 1, 0, 1, 1, ... ]
+	Fitness vector:		[24.9328]
+#41:
+	ID:			4057254338619753196
+	Decision vector:	[0, 0, 1, 0, 0, ... ]
+	Fitness vector:		[26.4175]
+#42:
+	ID:			13292190115972579755
+	Decision vector:	[0, 1, 0, 1, 1, ... ]
+	Fitness vector:		[27.0448]
+#43:
+	ID:			5953560332928845510
+	Decision vector:	[0, 1, 1, 1, 1, ... ]
+	Fitness vector:		[27.383]
+#44:
+	ID:			14744420723399107310
+	Decision vector:	[0, 0, 0, 1, 0, ... ]
+	Fitness vector:		[25.9976]
+#45:
+	ID:			10477418038647329603
+	Decision vector:	[0, 0, 1, 1, 0, ... ]
+	Fitness vector:		[25.3731]
+#46:
+	ID:			5778584757287040687
+	Decision vector:	[0, 1, 1, 0, 1, ... ]
+	Fitness vector:		[25.6908]
+#47:
+	ID:			8199660149334261241
+	Decision vector:	[1, 1, 1, 1, 1, ... ]
+	Fitness vector:		[27.3988]
+#48:
+	ID:			12595178156651684739
+	Decision vector:	[0, 0, 1, 0, 0, ... ]
+	Fitness vector:		[26.9785]
+#49:
+	ID:			14630874016098972503
+	Decision vector:	[0, 0, 1, 0, 1, ... ]
+	Fitness vector:		[25.8752]
+
+Champion decision vector: [0, 1, 0, 1, 1, ... ]
+Champion fitness: [24.9328]
+
+ULTIMA POP:  Problem name: <class 'PyCoptimizer.framework.island.Island'>
+	Global dimension:			190
+	Integer dimension:			0
+	Fitness dimension:			1
+	Number of objectives:			1
+	Equality constraints dimension:		0
+	Inequality constraints dimension:	0
+	Lower bounds: [0, 0, 0, 0, 0, ... ]
+	Upper bounds: [1, 1, 1, 1, 1, ... ]
+
+	Has gradient: false
+	User implemented gradient sparsity: false
+	Has hessians: false
+	User implemented hessians sparsity: false
+
+	Fitness evaluations: 2550
+
+	Thread safety: none
+
+Population size: 50
+
+List of individuals: 
+#0:
+	ID:			4518404425282667900
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6414]
+#1:
+	ID:			12214507444733061401
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6546]
+#2:
+	ID:			3290863753557243987
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6757]
+#3:
+	ID:			14565057825322300529
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6921]
+#4:
+	ID:			15145138679505510816
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6931]
+#5:
+	ID:			16292026748163146742
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6946]
+#6:
+	ID:			6499575489458173204
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.6982]
+#7:
+	ID:			13414005207163742946
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7037]
+#8:
+	ID:			9159437746565963434
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7055]
+#9:
+	ID:			10880344207866600185
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7064]
+#10:
+	ID:			2529955740423507186
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7094]
+#11:
+	ID:			16662840088853098600
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7094]
+#12:
+	ID:			7439375286882963424
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7111]
+#13:
+	ID:			5616187217939838496
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7119]
+#14:
+	ID:			6554535410386934708
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7126]
+#15:
+	ID:			158563695810676823
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7169]
+#16:
+	ID:			12513980862128689897
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7169]
+#17:
+	ID:			11768814862240496272
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7171]
+#18:
+	ID:			9764630861779659262
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7173]
+#19:
+	ID:			884537541026250011
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.718]
+#20:
+	ID:			4701634843569214203
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7183]
+#21:
+	ID:			2173217607691696941
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7198]
+#22:
+	ID:			3769742442225457403
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7206]
+#23:
+	ID:			4050098792768102227
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7234]
+#24:
+	ID:			8208432029302917030
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7236]
+#25:
+	ID:			7608700957482570824
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7237]
+#26:
+	ID:			10653096574527727881
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7277]
+#27:
+	ID:			13409199947691223968
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.728]
+#28:
+	ID:			3095808627691089466
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7281]
+#29:
+	ID:			16397059632737712536
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7285]
+#30:
+	ID:			15122927190154575044
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7291]
+#31:
+	ID:			6203890141075628222
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7299]
+#32:
+	ID:			14155096468128922218
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7299]
+#33:
+	ID:			18378939579205492034
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7304]
+#34:
+	ID:			15847278497191575146
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7305]
+#35:
+	ID:			5604912888757250604
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7313]
+#36:
+	ID:			15994206924803042220
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7314]
+#37:
+	ID:			8118201513883430814
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.733]
+#38:
+	ID:			6374446734833622359
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7335]
+#39:
+	ID:			1944651953136811524
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7337]
+#40:
+	ID:			2130214332614055767
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7341]
+#41:
+	ID:			4057254338619753196
+	Decision vector:	[0.444874, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7343]
+#42:
+	ID:			13292190115972579755
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7346]
+#43:
+	ID:			5953560332928845510
+	Decision vector:	[1, 1, 0.657339, 0, 0, ... ]
+	Fitness vector:		[24.7357]
+#44:
+	ID:			14744420723399107310
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7358]
+#45:
+	ID:			10477418038647329603
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7365]
+#46:
+	ID:			5778584757287040687
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7366]
+#47:
+	ID:			8199660149334261241
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7366]
+#48:
+	ID:			12595178156651684739
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7368]
+#49:
+	ID:			14630874016098972503
+	Decision vector:	[1, 1, 1, 0, 0, ... ]
+	Fitness vector:		[24.7368]
+
+Champion decision vector: [0.444874, 1, 1, 0, 0, ... ]
+Champion fitness: [24.6414]
+
+Results:
+
+Generation:   Value:   
+1  24.93279266357422  
+3  24.84803867340088  
+5  24.79909348487854  
+7  24.72364568710327  
+9  24.711052417755127 
+11  24.711052417755127 
+13  24.69822859764099  
+15  24.69822859764099  
+17  24.69822859764099  
+19  24.69822859764099  
+21  24.69822859764099  
+23  24.65462374687195  
+25  24.65462374687195  
+27  24.65462374687195  
+29  24.65462374687195  
+31  24.65462374687195  
+33  24.65462374687195  
+35  24.65462374687195  
+37  24.65462374687195  
+39  24.65462374687195  
+41  24.65462374687195  
+43  24.65462374687195  
+45  24.65462374687195  
+47  24.65462374687195  
+49  24.65462374687195  
+Best individual:  ['-falign-functions', '-falign-jumps', '-falign-labels', '-fbranch-probabilities', '-fbranch-target-load-optimize', '-fbtr-bb-exclusive', '-fcompare-elim', '-fcprop-registers', '-fcrossjumping', '-fcse-follow-jumps', '-fcx-limited-range', '-fdelayed-branch', '-fdelete-null-pointer-checks', '-fipa-sra', '-fexpensive-optimizations', '-ffat-lto-objects', '-fforward-propagate', '-fgcse', '-fgcse-after-reload', '-fgcse-las', '-fgcse-sm', '-fif-conversion2', '-findirect-inlining', '-finline-functions', '-fipa-cp-clone', '-fira-hoist-pressure', '-fira-loop-pressure', '-fno-ira-share-save-slots', '-fisolate-erroneous-paths-attribute', '-floop-block', '-floop-interchange', '-floop-strip-mine', '-floop-parallelize-all', '-flra-remat', '-flto', '-fmerge-constants', '-fmodulo-sched', '-fmodulo-sched-allow-regmoves', '-fmove-loop-invariants', '-fno-branch-count-reg', '-fno-defer-pop', '-fno-inline', '-fno-math-errno', '-fno-peephole', '-fno-sched-interblock', '-fno-sched-spec', '-fno-signed-zeros', '-fno-toplevel-reorder', '-fomit-frame-pointer', '-foptimize-sibling-calls', '-fpartial-inlining', '-fpeel-loops', '-fpredictive-commoning', '-fprofile-correction', '-fprofile-reorder-functions', '-freorder-blocks', '-freorder-blocks-and-partition', '-freorder-functions', '-frerun-cse-after-loop', '-freschedule-modulo-scheduled-loops', '-frounding-math', '-fsched-pressure', '-fsched-spec-load', '-fsched-spec-load-dangerous', '-fsched-stalled-insns-dep', '-fsched-spec-insn-heuristic', '-fsched-dep-count-heuristic', '-fschedule-insns', '-fselective-scheduling', '-fselective-scheduling2', '-fsemantic-interposition', '-fshrink-wrap', '-fssa-phiopt', '-fstrict-aliasing', '-fthread-jumps', '-ftracer', '-ftree-builtin-call-dce', '-ftree-ccp', '-ftree-ch', '-ftree-coalesce-vars', '-ftree-dce', '-ftree-dominator-opts', '-ftree-dse', '-ftree-forwprop', '-ftree-fre', '-ftree-loop-if-convert', '-ftree-loop-distribution', '-ftree-loop-distribute-patterns', '-ftree-loop-ivcanon', '-ftree-loop-optimize', '-ftree-pre', '-ftree-partial-pre', '-ftree-reassoc', '-ftree-sink', '-ftree-slsr', '-ftree-switch-conversion', '-ftree-vrp', '-funsafe-math-optimizations', '-funswitch-loops', '-fvariable-expansion-in-unroller', '-fvect-cost-model', '-fweb', '-fwhole-program', '-O', '-Os', '-Ofast']
+Static flags:  -march=native
+
+   Gen:        Fevals:          Best:   Improvement:
+      1             50        24.9328       0.084754
+      3            150         24.848      0.0450122
+      5            250        24.7991       0.041636
+      7            350        24.7236      0.0125933
+      9            450        24.7111    -0.00159693
+     11            550        24.7111     -0.0300944
+     13            650        24.6982     -0.0112009
+     15            750        24.6982     -0.0589924
+     17            850        24.6982     -0.0330822
+     19            950        24.6982     -0.0308614
+     21           1050        24.6982      0.0436049
+     23           1150        24.6546     -0.0879889
+     25           1250        24.6546     -0.0953305
+     27           1350        24.6546     -0.0827641
+     29           1450        24.6546     -0.0547628
+     31           1550        24.6546     -0.0739195
+     33           1650        24.6546     -0.0869384
+     35           1750        24.6546      -0.102446
+     37           1850        24.6546     -0.0902517
+     39           1950        24.6546     -0.0374646
+     41           2050        24.6546      -0.102455
+     43           2150        24.6546       -0.08235
+     45           2250        24.6546     -0.0835688
+     47           2350        24.6546     -0.0399773
+     49           2450        24.6546      0.0132282

@@ -1,5 +1,5 @@
 /* The Computer Language Benchmarks Game
-   https://salsa.debian.org/benchmarksgame-team/benchmarksgame/
+   http://benchmarksgame.alioth.debian.org/
 
    contributed by Mark C. Lewis
    modified slightly by Chad Whipkey
