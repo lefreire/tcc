@@ -39,7 +39,8 @@ class CompClean(object):
         individual = self.__change_flags(individual, flags, no_individuals)
         compile_command = "{}={} {}".format(
             self.user_class.macro, individual, compile_command)
-
+            
+        print("COMPILE COMMAND: ", compile_command)
         path = getcwd()
         chdir(compile_path)
 

@@ -65,6 +65,7 @@ class COptimizer(object):
             for individual in range(0, len(options)):
                 individual_first.append(random.randint(0, 1))
             individuals.append(individual_first)
+        print("POPULACAO INICIAL: ", individuals)
         return individuals
 
     def run_optimization(self):

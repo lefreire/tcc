@@ -128,6 +128,7 @@ class Island(object):
 
         algo.set_verbosity(2)
         self.pop = algo.evolve(self.pop)
+        print("ULTIMA POP: ", self.pop)
         logs = algo.extract(sga).get_log()
         return ([gen[0] for gen in logs], [val[2] for val in logs],
                 self.pop.champion_x)
